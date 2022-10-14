@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Player.Controlls
@@ -27,6 +28,10 @@ namespace Player.Controlls
         private bool _isJump;
         private bool _isRun=false;
 
+        public event Action Jumped;
+        public event Action Walked;
+        public event Action NotWalked;
+
         private float Speed => _isRun ? _speedRun : _speed;
 
         private Vector2 Dir => _dir.magnitude < Mathf.Epsilon ? _lastNoneZeroDir : _dir;
@@ -50,12 +55,23 @@ namespace Player.Controlls
         {
             CalculateProgress();
             _rigidbody.velocity = GetVelocity();
+            if (OnGround && _rigidbody.velocity.magnitude > Mathf.Epsilon)
+            {
+                Walked?.Invoke();
+            }
+            else
+            {
+                NotWalked?.Invoke();
+            }
         }
 
         public void Jump()
         {
-            if(OnGround)
+            if (OnGround)
+            {
+                Jumped?.Invoke();
                 _isJump = true;
+            }
         }
 
         private void CalculateProgress()

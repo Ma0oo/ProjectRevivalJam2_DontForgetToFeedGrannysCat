@@ -28,3 +28,16 @@ MonoBehaviour:
       Music: 1
   GameScene: Game
   MenuScene: Menu
+  MixerAudio: {fileID: 24100000, guid: 288910c4112cf534382a44cf505c12cb, type: 2}
+  MixerMaster:
+    Name: Master
+    Min: -80
+    Max: 0
+  MixerEffect:
+    Name: Effects
+    Min: -80
+    Max: 0
+  MixerMusic:
+    Name: Music
+    Min: -80
+    Max: 0

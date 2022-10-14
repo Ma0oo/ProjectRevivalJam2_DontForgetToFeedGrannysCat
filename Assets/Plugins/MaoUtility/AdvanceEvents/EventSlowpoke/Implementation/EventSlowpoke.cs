@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Plugins.MaoUtility.AdvanceEvents.EventSlowpoke.Implementation
 {

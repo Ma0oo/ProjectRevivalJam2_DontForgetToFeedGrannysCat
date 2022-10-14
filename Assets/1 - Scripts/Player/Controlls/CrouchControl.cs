@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -15,6 +16,9 @@ namespace Player.Controlls
         [SerializeField, Min(0)] private float _durationChangeState;
 
         private AnimationCurve Curve => _isToOn ? _toOnCurve : _toOffCurve;
+
+        public event Action ToDown;
+        public event Action ToUp;
 
         private float _progress;
         private bool _isToOn;

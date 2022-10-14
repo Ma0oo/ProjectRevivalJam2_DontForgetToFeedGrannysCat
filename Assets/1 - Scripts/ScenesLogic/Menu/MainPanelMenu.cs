@@ -25,6 +25,9 @@ namespace ScenesLogic.Menu
 
         private static bool _isFirstEnter=true;
 
+        public event Action FadeOnStartOff;
+        public event Action GameStarted;
+
         private SubInputInterface<IMenuInput> _menuInput;
 
         private void Start()
@@ -35,8 +38,16 @@ namespace ScenesLogic.Menu
             if (_isFirstEnter)
             {
                 _fadeScreen.SetInstanceState(true);
-                CoroutineGame.Instance.Wait(_delayFirstFadeScreen, ()=>_fadeScreen.Off());
+                CoroutineGame.Instance.Wait(_delayFirstFadeScreen, ()=>
+                {
+                    _fadeScreen.Off();
+                    FadeOnStartOff?.Invoke();
+                });
                 _isFirstEnter = false;
+            }
+            else
+            {
+                FadeOnStartOff?.Invoke();
             }
         }
 
@@ -60,6 +71,7 @@ namespace ScenesLogic.Menu
 
         private void StartGame()
         {
+            GameStarted?.Invoke();
             _fadeScreen.On(() => SceneLoader.Load(ConfigGame.Instance.GameScene, ()=>_fadeScreen.Off()));
             
         }

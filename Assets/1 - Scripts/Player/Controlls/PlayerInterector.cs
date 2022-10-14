@@ -1,4 +1,5 @@
-﻿using DoorSystem;
+﻿using System;
+using DoorSystem;
 using DoorSystem.Ext.Interect;
 using Player.Input;
 using Plugins.MaoUtility.DILocator.Atr;
@@ -20,6 +21,9 @@ namespace Player.Controlls
         [SerializeField] private LayerMask _mask;
         [SerializeField] private DoorMoveEntity _doorMoveEntity;
 
+        public event Action NoToInterect;
+        public event Action Interected;
+        
         private SubInputClass<PlayerInterectInput> _sub;
 
         private void Start()
@@ -38,9 +42,16 @@ namespace Player.Controlls
         {
             Ray ray = new Ray(_point.transform.position, _point.transform.forward);
             if (Physics.Raycast(ray, out var info, _lenght, _mask)) 
+            {
                 TryGetInterectObj(info.collider)
                     ?.Interect(new ToggleInterect.InvertState())
                     .Interect(new MoveByDoorAction(_doorMoveEntity));
+                Interected?.Invoke();
+            }
+            else
+            {
+                NoToInterect?.Invoke();
+            }
         }
     }
 }
