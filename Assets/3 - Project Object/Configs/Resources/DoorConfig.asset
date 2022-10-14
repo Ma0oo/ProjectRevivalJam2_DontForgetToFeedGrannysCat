@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f8f1c0a0f74a7fa2e6f4a9b51045ab, type: 3}
+  m_Name: DoorConfig
+  m_EditorClassIdentifier: 
+  HLine: 2
+  ColorLine: {r: 0.16300285, g: 0.84292287, b: 0.9339623, a: 1}
+  HHandler: 1
+  ColorEditorBtnConnect: {r: 0.20225172, g: 0.38746688, b: 0.9528302, a: 0.62352943}
+  ColorEditorBtnDisconnect: {r: 1, g: 0, b: 0.16923761, a: 0.6745098}
+  SizeEditBtn: 0.4
+  ColorSelect: {r: 0, g: 1, b: 0, a: 0.33333334}
+  SizeSelect: 0.4

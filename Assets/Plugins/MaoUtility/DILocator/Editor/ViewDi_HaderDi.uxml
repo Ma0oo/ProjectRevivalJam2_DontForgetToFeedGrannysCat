@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="background-color: rgb(87, 87, 87); height: 50px;">
+        <ui:VisualElement text="Di Container" style="flex-direction: row;">
+            <ui:Label text="Di Container" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); -unity-font-style: bold; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 9px; font-size: 14px; -unity-text-align: middle-left; white-space: nowrap;" />
+            <ui:Button text="In Show" display-tooltip-when-elided="true" name="ShowHide_Btn" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgb(43, 43, 43); -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; padding-left: 10px; padding-right: 10px; padding-top: 1px; padding-bottom: 1px; margin-left: 30px; margin-right: 0; margin-top: 1px; margin-bottom: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="height: auto; flex-direction: row;">
+            <ui:VisualElement style="width: 30px; height: 30px; margin-left: 8px; background-image: url(&apos;/Assets/MaoUtility/DILocator/Editor/Icons/kisspng-package-delivery-mail-box-parcel-5af58f1bd681d6.9307643015260423958786.png&apos;);" />
+            <ui:Label text="Name Di Box - " display-tooltip-when-elided="true" name="PrefixName" style="-unity-text-align: middle-left; font-size: 18px; color: rgb(255, 226, 40);" />
+            <ui:Label text="*Name*" display-tooltip-when-elided="true" name="NameBox" style="-unity-text-align: middle-left; font-size: 18px; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="Content" style="height: auto; margin-left: 20px; display: flex;" />
+</ui:UXML>

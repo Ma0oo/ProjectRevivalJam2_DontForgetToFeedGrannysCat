@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="background-color: rgba(253, 253, 253, 0); height: 47px;">
+        <ui:VisualElement style="flex-direction: row; white-space: nowrap;">
+            <ui:Label text="Type of object:" display-tooltip-when-elided="true" style="font-size: 14px;" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="TypeLabel" style="-unity-text-align: middle-left; font-size: 14px; color: rgb(255, 202, 25);" />
+            <ui:Label text=": in count - 5" display-tooltip-when-elided="true" name="CountLabel" style="font-size: 14px; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="Content" />
+    </ui:VisualElement>
+</ui:UXML>

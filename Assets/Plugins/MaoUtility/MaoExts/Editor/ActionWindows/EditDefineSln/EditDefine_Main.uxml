@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="flex-direction: row;">
+        <uie:EnumField value="Center" name="EnumTargetGroup" style="width: 180px;" />
+        <ui:Button text="Refresh" display-tooltip-when-elided="true" name="Refresh_Btn" style="padding-left: 12px; padding-right: 12px;" />
+        <ui:Button text="Applay" display-tooltip-when-elided="true" enable-rich-text="true" name="Applay_Btn" style="padding-left: 12px; padding-right: 12px;" />
+    </ui:VisualElement>
+</ui:UXML>

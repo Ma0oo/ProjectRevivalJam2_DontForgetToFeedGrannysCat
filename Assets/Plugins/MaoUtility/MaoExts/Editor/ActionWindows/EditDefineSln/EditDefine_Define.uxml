@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: row; justify-content: space-between;">
+        <ui:Label text="Define:" display-tooltip-when-elided="true" style="font-size: 15px; color: rgb(255, 255, 255);" />
+        <ui:Label text="HasAsset_Odin" display-tooltip-when-elided="true" name="DefineName" style="font-size: 15px; color: rgb(255, 242, 0);" />
+        <ui:Button text="On" display-tooltip-when-elided="true" name="Change_Btn" style="padding-top: 0; padding-bottom: 0; margin-left: 14px; margin-right: 14px; width: 55px; background-color: rgb(226, 25, 20); color: rgb(0, 0, 0);" />
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="Change_Label" style="font-size: 15px;" />
+    </ui:VisualElement>
+</ui:UXML>
