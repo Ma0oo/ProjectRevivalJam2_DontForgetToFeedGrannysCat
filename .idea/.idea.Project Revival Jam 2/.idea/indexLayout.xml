@@ -5,6 +5,7 @@
     <explicitIncludes>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.17.2</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.6</Path>
+      <Path>Library/PackageCache/com.unity.feature.2d@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.feature.development@1.0.1</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@3.0.15</Path>
       <Path>Library/PackageCache/com.unity.ide.visualstudio@2.0.16</Path>
@@ -54,6 +55,7 @@
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
+      <Path>.git</Path>
       <Path>.idea</Path>
       <Path>Builds</Path>
       <Path>Logs</Path>

@@ -12,7 +12,7 @@ namespace DataGame
     public class DataSetting 
     {
         [JsonIgnore]public EventBusLimited<Event> Bus => _bus;
-        [JsonIgnore]private EventBusLimited<Event> _bus;
+        [JsonIgnore]private EventBusLimited<Event> _bus = new EventBusLimited<Event>();
 
         public KeyConfig Keys;
         public SoundConfig SoundConfig;

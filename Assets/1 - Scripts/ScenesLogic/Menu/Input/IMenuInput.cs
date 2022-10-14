@@ -11,5 +11,9 @@ namespace ScenesLogic.Menu.Input
         event Action Exit;
 
         event Action BakcByHistoryPanel;
+
+        event Action OpenKeySetting;
+        event Action OpenSoundSetting;
+        event Action ClearProgress;
     }
 }

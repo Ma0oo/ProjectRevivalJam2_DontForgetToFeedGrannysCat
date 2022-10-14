@@ -2,22 +2,26 @@
 using Plugins.MaoUtility.IoUi.Btns;
 using Plugins.MaoUtility.IoUi.Core;
 using Plugins.MaoUtility.MaoExts.Static;
+using Sirenix.Utilities;
 using UnityEngine;
 
 namespace DataGame.Sound
 {
-    public class IoSoundHandler : IoGroupHandler
+    public class IoSoundHandler : IoGroupHandler, IHideOpenIoBtn
     {
         [SerializeField] private IoBtnFloat _btnView;
         [SerializeField] private Transform _parent;
 
-        public IoBtnFloat Master;
-        public IoBtnFloat Effect;
-        public IoBtnFloat Music;
+        [HideInInspector] public IoBtnFloat Master;
+        [HideInInspector] public IoBtnFloat Effect;
+        [HideInInspector] public IoBtnFloat Music;
+        
+        private MonoBehaviour[] Btns => new MonoBehaviour[]{Master, Effect, Music};
 
-        private void Awake()
+        private void Start()
         {
             Spawn();
+            Register<IoSoundHandler>();
         }
 
         private void Spawn()
@@ -33,5 +37,9 @@ namespace DataGame.Sound
             r.Component.Get<LabelIo>().Text = masterName;
             return r;
         }
+        
+        public void On() => Btns.ForEach(x => x.gameObject.SetActive(true));
+
+        public void Off() => Btns.ForEach(x => x.gameObject.SetActive(false));
     }
 }
