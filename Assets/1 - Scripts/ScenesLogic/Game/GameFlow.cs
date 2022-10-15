@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using DataGame.Save;
 using DefaultNamespace.ApartmentSystem;
 using DefaultNamespace.Player;
 using NoSystem;
@@ -25,6 +27,8 @@ namespace DefaultNamespace.ScenesLogic.Game
         [DiInject] private PlayerFactory _playerFactory;
         [DiInject(RegisterFadeScreenBetweenScene.FadeScreenBlack)] private FadeScreen _fadeScreenScene;
         [DiInject] private ApartmentFactory _apartmentFactory;
+        [DiInject] private NightProvider _nightProvider;
+        [DiInject] private SaveDataProvider _saveDataProvider;
 
         private GameResult _gameResult;
         private GameLoopData _data;
@@ -60,6 +64,9 @@ namespace DefaultNamespace.ScenesLogic.Game
 
         private void OnWin()
         {
+            _saveDataProvider.Current.UpdateNight(_data.NightSO, _nightProvider.Nights.ToArray());
+            _saveDataProvider.Save();
+            
             _gameResult.Win -= OnWin;
             _gameResult.Lose -= OnLose;
             _smGame.ChangeTo(StateGame.Win);

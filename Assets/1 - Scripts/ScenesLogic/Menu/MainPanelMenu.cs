@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using DataGame.Save;
 using DefaultNamespace;
 using DefaultNamespace.ScenesLogic.Game;
 using NoSystem;
@@ -19,9 +21,10 @@ namespace ScenesLogic.Menu
     {
         [DiInject(RegisterFadeScreenBetweenScene.FadeScreenBlack)] private FadeScreen _fadeScreen;
         [DiInject] private InputManager _inputManager;
+        [DiInject] private SaveDataProvider _saveDataProvider;
+        [DiInject] private NightProvider _nightProvider;
 
         [SerializeField] private float _delayFirstFadeScreen;
-        [SerializeField] private Night _night;
 
         private PanelMenu Panels=>_panels??=Owner.Get<PanelMenu>();
         private PanelMenu _panels;
@@ -74,11 +77,15 @@ namespace ScenesLogic.Menu
 
         private void StartGame()
         {
-            SceneShareDataProvider.Instance.Add(new GameFlow.GameLoopData(_night));;
+            SceneShareDataProvider.Instance.Add(new GameFlow.GameLoopData(GetNight()));;
             GameStarted?.Invoke();
             _fadeScreen.On(() => SceneLoader.Load(ConfigGame.Instance.GameScene));
             
+            Night GetNight() 
+                => _nightProvider.Nights.ToArray()[_saveDataProvider.Current.Night];
         }
+
+        
 
         private void OnCredit() => Panels.ChangeState(PanelMenu.State.Credit);
 
