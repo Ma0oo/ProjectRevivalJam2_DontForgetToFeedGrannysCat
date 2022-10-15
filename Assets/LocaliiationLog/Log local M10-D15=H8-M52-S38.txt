@@ -1,0 +1,76 @@
+BTN_PLAY | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu
+
+
+BTN_CREDIT | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu (2)
+
+
+BTN_EXIT | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu (3)
+
+
+BTN_SETTING | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu (1)
+
+
+Master | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Effect | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Music | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Forward | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Back | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Right | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Left | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Jump | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Crouch | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Run | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+Use | scene Menu 
+Установка имя поля для настроек в главном меню
+
+
+BTN_CLEAR_SAVE | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu-Clear Progress
+
+
+BTN_KEY_SETTING | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu (1)
+
+
+BTN_SOUND_SETTING | scene Menu 
+Запрос от Name GM Local, Name Parent BtnMenu
+
+
+BTN_BACK_MENU | scene Menu 
+Запрос от Name GM SetLocal, Name Parent BackBtn
+
+

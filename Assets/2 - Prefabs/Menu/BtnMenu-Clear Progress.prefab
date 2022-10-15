@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371762137323473581, guid: 63eebd62668933a45947d484a4ef0ea4, type: 3}
+      propertyPath: _id
+      value: BTN_CLEAR_SAVE
+      objectReference: {fileID: 0}
     - target: {fileID: 375950365457679829, guid: 63eebd62668933a45947d484a4ef0ea4, type: 3}
       propertyPath: Data.Value.b
       value: 0.19134924

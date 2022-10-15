@@ -1,0 +1,25 @@
+{
+    "BTN_PLAY":"Играть",
+    "BTN_SETTING":"Настройки",
+    "BTN_CREDIT":"Титры",
+    "BTN_EXIT":"Выход",
+    
+    "BTN_BACK_MENU":"Назад",
+    "BTN_CLEAR_SAVE":"Начать занова",
+    "BTN_SOUND_SETTING":"Звук",  
+    "BTN_KEY_SETTING":"Управление",
+    "BTN_OTHER_SETTING":"Другое",
+    
+    "KEY_Master":"Общий",
+    "KEY_Effect":"Эффекты",
+    "KEY_Music":"Музыка",
+    
+    "KEY_Forward":"Вперед",
+    "KEY_Back":"Назад",
+    "KEY_Right":"Вправо",
+    "KEY_Left":"Влево",
+    "KEY_Jump":"Прыжок",
+    "KEY_Crouch":"Кортаны",
+    "KEY_Run":"Сбёг?",   
+    "KEY_Use":"Юзай",
+}

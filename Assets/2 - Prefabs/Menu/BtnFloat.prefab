@@ -655,6 +655,7 @@ GameObject:
   - component: {fileID: 1059126146009001078}
   - component: {fileID: 1059126146009001076}
   - component: {fileID: 1059126146009001075}
+  - component: {fileID: 6572684569481831082}
   m_Layer: 5
   m_Name: BtnFloat
   m_TagString: Untagged
@@ -750,6 +751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _label: {fileID: 1059126144958038124}
+  _requestString: {fileID: 6572684569481831082}
 --- !u!114 &1059126146009001075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,6 +765,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 1059126145636772354}
+--- !u!114 &6572684569481831082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059126146009001066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f1a9aa296945559318b6dd64161dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1059126146395616263
 GameObject:
   m_ObjectHideFlags: 0

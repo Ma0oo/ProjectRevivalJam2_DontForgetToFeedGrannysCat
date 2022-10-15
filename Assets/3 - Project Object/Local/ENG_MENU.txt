@@ -1,0 +1,25 @@
+{
+    "BTN_PLAY":"Play",
+    "BTN_SETTING":"Setting",
+    "BTN_CREDIT":"Credit",
+    "BTN_EXIT":"Exit",
+    
+    "BTN_BACK_MENU":"Back",
+    "BTN_CLEAR_SAVE":"Clear progress",
+    "BTN_SOUND_SETTING":"Sound",  
+    "BTN_KEY_SETTING":"Keys",
+    "BTN_OTHER_SETTING":"Other",
+    
+    "KEY_Master":"Master",
+    "KEY_Effect":"Effect",
+    "KEY_Music":"Music",
+    
+    "KEY_Forward":"Forward",
+    "KEY_Back":"Back",
+    "KEY_Right":"Right",
+    "KEY_Left":"Left",
+    "KEY_Jump":"Jump",
+    "KEY_Crouch":"Crouch",
+    "KEY_Run":"Run Fast",   
+    "KEY_Use":"Use",
+}
