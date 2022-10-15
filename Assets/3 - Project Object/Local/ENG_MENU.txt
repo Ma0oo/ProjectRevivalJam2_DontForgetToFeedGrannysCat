@@ -22,4 +22,15 @@
     "KEY_Crouch":"Crouch",
     "KEY_Run":"Run Fast",   
     "KEY_Use":"Use",
+    
+    "CREDIT_JAM_NAME_DESCRIPTION":"Game for jam",
+    "CREDIT_JAM_NAME":"Project Revival Jam 2",
+    
+    "CREDIT_SOUND":"Sound and music",
+    "CREDIT_ryanavx_MUSIC":"Menu theme",
+    "CREDIT_ryanavx_MUSIC_LINK":"Ryanavx music",
+    
+    "CREDIT_ASSETS":"Other",
+    "CREDIT_PSX_SHADER":"PSX SHADER",
+    "CREDIT_PSX_SHADER_LINK":"Asset Store",
 }

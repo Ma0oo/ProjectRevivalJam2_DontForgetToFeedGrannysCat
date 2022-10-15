@@ -22,4 +22,15 @@
     "KEY_Crouch":"Кортаны",
     "KEY_Run":"Сбёг?",   
     "KEY_Use":"Юзай",
+    
+    "CREDIT_JAM_NAME_DESCRIPTION":"Игра для джема",
+    "CREDIT_JAM_NAME":"Project Revival Jam 2",
+    
+    "CREDIT_SOUND":"Звуки и музыка",
+    "CREDIT_ryanavx_MUSIC":"Тема меню",
+    "CREDIT_ryanavx_MUSIC_LINK":"Ryanavx music",
+    
+    "CREDIT_ASSETS":"Другое",
+    "CREDIT_PSX_SHADER":"PSX Шейдер",
+    "CREDIT_PSX_SHADER_LINK":"Магазин юнити",
 }
