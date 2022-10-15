@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Plugins.MaoUtility.DataManagers
 {
     [System.Serializable]
-    public abstract class DataManagerSystemObject<T> : ICloseDataManagerSystemObject<T> where T : class, ICloneable
+    public abstract class DataManagerSystemObject<T> : ICloseDataManager<T> where T : class, ICloneable
     {
         public IReadOnlyCollection<T> Data => Datas;
         [SerializeReference, JsonProperty] protected List<T> Datas=new List<T>();

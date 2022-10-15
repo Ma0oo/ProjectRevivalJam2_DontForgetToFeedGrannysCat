@@ -72,7 +72,7 @@ namespace ScenesLogic.Menu
         private void StartGame()
         {
             GameStarted?.Invoke();
-            _fadeScreen.On(() => SceneLoader.Load(ConfigGame.Instance.GameScene, ()=>_fadeScreen.Off()));
+            _fadeScreen.On(() => SceneLoader.Load(ConfigGame.Instance.GameScene));
             
         }
 

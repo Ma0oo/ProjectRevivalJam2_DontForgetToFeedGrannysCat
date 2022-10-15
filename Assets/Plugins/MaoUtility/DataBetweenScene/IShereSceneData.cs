@@ -2,7 +2,7 @@
 
 namespace Plugins.MaoUtility.DataBetweenScene
 {
-    public interface ISceneData : ICloneable
+    public interface IShereSceneData : ICloneable
     {
         
     }

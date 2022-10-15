@@ -1,4 +1,5 @@
-﻿using Player.Input;
+﻿using DefaultNamespace.Player;
+using Player.Input;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.InputModule.Core;
@@ -7,7 +8,7 @@ using UnityEngine;
 namespace Player.Controlls
 {
     [DiMark]
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, IPlayerUnityPart
     {
         [DiInject] private InputManager _inputManager;
 

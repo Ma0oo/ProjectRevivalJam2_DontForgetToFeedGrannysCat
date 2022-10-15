@@ -67,6 +67,8 @@ GameObject:
   - component: {fileID: 2704975892971972942}
   - component: {fileID: 2704975892971972940}
   - component: {fileID: 201960455}
+  - component: {fileID: 2704975892905411917}
+  - component: {fileID: 2704975892905411918}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -315,6 +317,66 @@ MonoBehaviour:
     - _Target: {fileID: 2704975892971972942}
       _MethodName: InitAngel
       _PersistentArguments: []
+--- !u!114 &2704975892905411917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704975892971974325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0c557d89fc4ec39d7d7a46b465be35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _parts: {fileID: 2704975892905411918}
+--- !u!114 &2704975892905411918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704975892971974325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb640c1204384752ad8de348ad479ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2704975892971972943}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Monos
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[DefaultNamespace.Player.IPlayerUnityPart,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &4006419691228688229
 GameObject:
   m_ObjectHideFlags: 0

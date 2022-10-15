@@ -2,11 +2,14 @@
 
 namespace Plugins.MaoUtility.DataManagers
 {
-    public interface ICloseDataManagerSystemObject<T>
+    public interface ICloseDataManager<T> : IGeterDataManager<T>
     {
         public event Action<T> Added;
         public event Action<T> Removed;
-        
+    }
+
+    public interface IGeterDataManager<T>
+    {
         public T Get(Func<T, bool> predicate);
 
         public T[] GetAll(Func<T, bool> predicate);

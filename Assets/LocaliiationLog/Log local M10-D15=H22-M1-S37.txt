@@ -10,12 +10,3 @@ BTN_EXIT | scene Menu | ("BTN_EXIT":"NewValue")
 BTN_SETTING | scene Menu | ("BTN_SETTING":"NewValue")
 Запрос от Name GM Local, Name Parent BtnMenu (1)
 
-BTN_BACK_MENU | scene Menu | ("BTN_BACK_MENU":"NewValue")
-Запрос от Name GM SetLocal, Name Parent BackBtn
-
-CREDIT_SOUND | scene Menu | ("CREDIT_SOUND":"NewValue")
-Запрос от Name GM Credit, Name Parent MainCanvas
-
-CREDIT_ASSETS | scene Menu | ("CREDIT_ASSETS":"NewValue")
-Запрос от Name GM Credit, Name Parent MainCanvas
-

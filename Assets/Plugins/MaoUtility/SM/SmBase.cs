@@ -3,7 +3,7 @@ using System.Net.Mail;
 
 namespace Plugins.MaoUtility.SM
 {
-    public abstract class SmBase<T>
+    public abstract class SmBase<T> : IClosedSM<T>
     {
         public abstract T Current { get; }
         
@@ -14,5 +14,14 @@ namespace Plugins.MaoUtility.SM
         public abstract void ChangeTo(T newState);
 
         public abstract bool ValidChange(T oldState, T newState);
+    }
+    
+    public interface IClosedSM<T>
+    {
+        T Current { get; }
+        
+        event Action<T> ExitFrom;
+        event Action<T> EnterTo;
+        event Action<T, T> FailedChange;
     }
 }
