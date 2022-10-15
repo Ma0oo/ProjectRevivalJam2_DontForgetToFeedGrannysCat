@@ -1,9 +1,10 @@
 ﻿using System;
+using DefaultNamespace.Player;
 using UnityEngine;
 
 namespace Player.Controlls
 {
-    public class CameraPlayerController : MonoBehaviour
+    public class CameraPlayerController : MonoBehaviour, IPlayerUnitPart
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Camera _camera;

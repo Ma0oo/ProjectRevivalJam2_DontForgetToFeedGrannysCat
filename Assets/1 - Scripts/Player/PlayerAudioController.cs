@@ -52,6 +52,7 @@ namespace DefaultNamespace.Player
         private void SetWalk(bool state)
         {
             if(_stateWalk==state) return;
+            _stateWalk = state;
             _tween?.Kill();
             _tween = DOTween.To(() => _sourceStep.volume, x => _sourceStep.volume = x, state ? _volumeStep : 0, _durationChangeStep);
         }
@@ -63,7 +64,9 @@ namespace DefaultNamespace.Player
             r.volume = data.Volume;
             r.Play();
         }
-        
+
+        private void OnDestroy() => _tween?.Kill();
+
         [System.Serializable]
         public class ClidData
         {

@@ -6184,7 +6184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Datas:
-  - {fileID: 1125855495}
   - {fileID: 984337035}
   - {fileID: 1368336757}
   - {fileID: 1368336758}
@@ -7211,6 +7210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _delayFirstFadeScreen: 1
+  _night: {fileID: 11400000, guid: 54b30540f82a00a459d267ce03174cc2, type: 2}
 --- !u!114 &1368336758
 MonoBehaviour:
   m_ObjectHideFlags: 0

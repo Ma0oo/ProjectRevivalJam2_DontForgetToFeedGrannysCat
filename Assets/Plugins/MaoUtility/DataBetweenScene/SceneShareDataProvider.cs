@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace Plugins.MaoUtility.DataBetweenScene
 {
+    [System.Serializable]
     public class SceneShareDataProvider : DataManagerSystemObject<IShereSceneData>
     {
         private static SceneShareDataProvider _instance;

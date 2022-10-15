@@ -1,14 +1,16 @@
 ﻿using DefaultNamespace.Player;
+using NoSystem;
 using Player.Input;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.InputModule.Core;
+using Plugins.MaoUtility.MaoExts.Static;
 using UnityEngine;
 
 namespace Player.Controlls
 {
     [DiMark]
-    public class PlayerController : MonoBehaviour, IPlayerUnityPart
+    public class PlayerController : MonoBehaviour, IPlayerUnitPart
     {
         [DiInject] private InputManager _inputManager;
 
@@ -18,7 +20,10 @@ namespace Player.Controlls
 
         private SubInputClass<PlayerMoveInput> _subMove;
 
-        private void Awake() => _subMove= new SubInputClass<PlayerMoveInput>(Reg, Unreg, _inputManager);
+        private void Awake()
+        {
+            _subMove = new SubInputClass<PlayerMoveInput>(Reg, Unreg, _inputManager);
+        }
 
         private void OnDisable()
         {

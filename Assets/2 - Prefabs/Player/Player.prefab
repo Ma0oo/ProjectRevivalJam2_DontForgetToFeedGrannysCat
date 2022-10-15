@@ -363,7 +363,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Monos
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[DefaultNamespace.Player.IPlayerUnityPart,
+      Data: 0|System.Collections.Generic.List`1[[DefaultNamespace.Player.IPlayerUnitPart,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12

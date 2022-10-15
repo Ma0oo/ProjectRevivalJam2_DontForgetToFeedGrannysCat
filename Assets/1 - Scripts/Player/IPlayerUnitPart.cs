@@ -2,7 +2,7 @@
 
 namespace DefaultNamespace.Player
 {
-    public interface IPlayerUnityPart : IMonoBehaviour
+    public interface IPlayerUnitPart : IMonoBehaviour
     {
         
     }

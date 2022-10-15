@@ -1,4 +1,5 @@
 ﻿using System;
+using DefaultNamespace.ApartmentSystem;
 using NoSystem;
 using Plugins.MaoUtility.Attributes;
 using Plugins.MaoUtility.DILocator.Atr;
@@ -9,7 +10,7 @@ using UnityEngine;
 namespace DoorSystem
 {
     [RequireComponent(typeof(DoorEdit)), DiMark]
-    public class Door : MonoBehaviour
+    public class Door : MonoBehaviour, IRoomPart
     {
         [DiInject(RegisterDoor.IdFadeScreen)] private FadeScreen Fade;
 

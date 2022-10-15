@@ -1,6 +1,8 @@
 ﻿using System;
 using DefaultNamespace;
+using DefaultNamespace.ScenesLogic.Game;
 using NoSystem;
+using Plugins.MaoUtility.DataBetweenScene;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.InputModule.Core;
@@ -19,6 +21,7 @@ namespace ScenesLogic.Menu
         [DiInject] private InputManager _inputManager;
 
         [SerializeField] private float _delayFirstFadeScreen;
+        [SerializeField] private Night _night;
 
         private PanelMenu Panels=>_panels??=Owner.Get<PanelMenu>();
         private PanelMenu _panels;
@@ -71,6 +74,7 @@ namespace ScenesLogic.Menu
 
         private void StartGame()
         {
+            SceneShareDataProvider.Instance.Add(new GameFlow.GameLoopData(_night));;
             GameStarted?.Invoke();
             _fadeScreen.On(() => SceneLoader.Load(ConfigGame.Instance.GameScene));
             
