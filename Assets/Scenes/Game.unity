@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cacheMonoBeh:
+  - {fileID: 0}
   - {fileID: 641685932}
   - {fileID: 801123305}
 --- !u!114 &104177466
@@ -193,6 +194,8 @@ MonoBehaviour:
   - {fileID: 144789581}
   - {fileID: 144789582}
   - {fileID: 144789583}
+  - {fileID: 144789584}
+  - {fileID: 144789585}
   InjectScene: {fileID: 104177465}
   OwnerLogic: {fileID: 104177466}
 --- !u!4 &104177468
@@ -579,6 +582,7 @@ GameObject:
   - component: {fileID: 801123305}
   - component: {fileID: 801123306}
   - component: {fileID: 801123307}
+  - component: {fileID: 801123308}
   m_Layer: 0
   m_Name: Logic Scene
   m_TagString: Untagged
@@ -641,6 +645,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentIndex: 0
   _currentDuration: 0
+--- !u!114 &801123308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801123303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66d088f5bb84dbe8297df96bb1edb07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &828461725
 GameObject:
   m_ObjectHideFlags: 0

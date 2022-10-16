@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
+using Unity.Collections;
 using UnityEngine;
 
 namespace Plugins.MaoUtility.SM
 {
     public abstract class SmByStruct<T> : SmBase<T> where T : struct
     {
-        public override T Current => _current.HasValue ? _current.Value : _defaultState;
+        [ShowInInspector, Sirenix.OdinInspector.ReadOnly]public override T Current => _current.HasValue ? _current.Value : _defaultState;
         
         public override event Action<T> ExitFrom;
         public override event Action<T> EnterTo;
@@ -37,7 +39,7 @@ namespace Plugins.MaoUtility.SM
             }
         }
 
-        public override bool ValidChange(T oldState, T newState) 
-            => EqualityComparer<T>.Default.Equals(oldState, newState);
+        public override bool ValidChange(T oldState, T newState)
+            => true;
     }
 }
