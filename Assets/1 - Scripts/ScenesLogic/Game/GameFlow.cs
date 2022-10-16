@@ -44,12 +44,11 @@ namespace DefaultNamespace.ScenesLogic.Game
             _apartmentFactory.Init(_data.NightSO.Apartment);
             
             _smGame.ChangeTo(StateGame.OnLoad);
-            CoroutineGame.Instance.WaitFrame(3, Init);
+            CoroutineGame.Instance.WaitFrame(3, ()=>Init(_playerFactory.GetOrCreate()));
         }
 
-        private void Init()
+        private void Init(PlayerUnit player)
         {
-            var player = _playerFactory.GetOrCreate();
             _fadeScreenScene.Off();
             
             List<PlayerSpawnPoint> _points = new List<PlayerSpawnPoint>();

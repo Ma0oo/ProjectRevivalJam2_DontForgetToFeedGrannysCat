@@ -28,13 +28,11 @@ namespace Player.Controlls
         private void OnDisable()
         {
             _subMove.SubscribeAction(false);
-            Cursor.lockState = CursorLockMode.None;
         }
 
         private void OnEnable()
         {
             _subMove.SubscribeAction(true);
-            Cursor.lockState = CursorLockMode.Locked;
         }
 
 

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2704975892962223908}
   - component: {fileID: 2704975892962223909}
+  - component: {fileID: 7648379803037314932}
   m_Layer: 0
   m_Name: Components
   m_TagString: Untagged
@@ -51,6 +52,31 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   _doorMoveEntity: {fileID: 201960455}
+--- !u!114 &7648379803037314932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704975892962223911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220562ef089a4b9db1a01c7a227bc993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NewStateMenuPanel:
+    _PersistentCalls:
+    - _Target: {fileID: 2704975892971972942}
+      _MethodName: set_enabled
+      _PersistentArguments:
+      - _Type: 14
+        _Int: 0
+        _String: 
+        _X: 1
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &2704975892971974325
 GameObject:
   m_ObjectHideFlags: 0

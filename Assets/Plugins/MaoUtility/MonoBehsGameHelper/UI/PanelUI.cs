@@ -23,6 +23,7 @@ namespace Plugins.MaoUtility.MonoBehsGameHelper.UI
     public class PanelUI : MonoBehaviour
 #endif
     {
+        public bool IsOn => _isOn;
         [SerializeField] private bool _isOn;
         [SerializeField] private bool _updateOnStart;
         
