@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using Sirenix.OdinInspector;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 namespace Plugins.MaoUtility.Localization.Implementation.Res

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Plugins.MaoUtility.SceneFlow;
 using Sirenix.OdinInspector;
@@ -14,6 +15,9 @@ namespace DefaultNamespace.ScenesLogic.Game
         [SerializeField] private float _currentDuration;
         private Night.HourData[] _hours;
 
+        
+        public IReadOnlyCollection<Night.HourData> Hours => _hours;
+        
         [ShowInInspector, Sirenix.OdinInspector.ReadOnly]
         public float Normal 
             => CurrentHours!=null ? _currentDuration / CurrentHours.DurationInSecond : 1;
@@ -23,7 +27,7 @@ namespace DefaultNamespace.ScenesLogic.Game
             => (_hours!=null && _hours.Length>0) ? _hours[Mathf.Clamp(_currentIndex, 0, _hours.Length)] : null;
 
         public event Action HourPass;
-        public event Action NewDuration;
+        public event Action NewNormal;
         public event Action AllHourPass;
         
         public void Init(Night night)
@@ -37,12 +41,12 @@ namespace DefaultNamespace.ScenesLogic.Game
         {
             if(_currentIndex>=_hours.Length) return;
             _currentDuration += Time.deltaTime * CurrentHours.SpeedByNormal.Evaluate(Normal);
-            NewDuration?.Invoke();
+            NewNormal?.Invoke();
 
             if (_currentDuration >= CurrentHours.DurationInSecond)
             {
-                HourPass?.Invoke();
                 StartHour(_currentIndex+1);
+                HourPass?.Invoke();
             }
         }
 
