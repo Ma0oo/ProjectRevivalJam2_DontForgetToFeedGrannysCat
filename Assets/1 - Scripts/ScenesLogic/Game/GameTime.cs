@@ -53,6 +53,7 @@ namespace DefaultNamespace.ScenesLogic.Game
         private void StartHour(int hourIndex)
         {
             _currentIndex = hourIndex;
+            _currentIndex = Mathf.Clamp(_currentIndex, 0, _hours.Length-1);
             _currentDuration = 0;
             if(_currentIndex>=_hours.Length-1) AllHourPass?.Invoke();
         }

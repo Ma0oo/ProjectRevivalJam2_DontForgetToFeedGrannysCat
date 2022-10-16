@@ -19,18 +19,31 @@ namespace DataGame.Keys
         {
             if(Time==null) return;
             CoroutineGame.Instance.WaitFrame(2, Init);
+            CustomStart();
         }
 
         private void Init()
         {
-            Time.NewNormal +=()=> OnNewNormal(Time.Normal);
-            Time.HourPass += () => OnNewHours(Time.CurrentHours);
+            Time.NewNormal +=OnTimeOnNewNormal;
+            Time.HourPass += OnTimeOnHourPass;
             Time.AllHourPass += OnEnd;
             
             OnNewHours(Time.CurrentHours);
             OnNewNormal(Time.Normal);
+            Time.AllHourPass += Stop;
         }
-        
+
+        private void OnTimeOnHourPass() => OnNewHours(Time.CurrentHours);
+
+        private void OnTimeOnNewNormal() => OnNewNormal(Time.Normal);
+
+        private void Stop()
+        {
+            Time.NewNormal -= OnTimeOnNewNormal;
+            Time.HourPass -= OnTimeOnHourPass;
+            Time.AllHourPass -= OnEnd;
+        }
+
         protected virtual void CustomStart(){}
 
         protected virtual void OnEnd() { }
