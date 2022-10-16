@@ -12,18 +12,18 @@ namespace Plugins.MaoUtility.InputModule.AutoSub
         private Action<T> _unreg;
         private InputManager _inputManager;
 
-        public SubInputInterface(Action<T> register, Action<T> unregister)
-        {
-            _reg = register;
-            _unreg = unregister;
-            _inputManager = DI.Instance.Get<InputManager>();
-        }
-        
         public SubInputInterface(Action<T> register, Action<T> unregister, InputManager inputManager)
         {
             _reg = register;
             _unreg = unregister;
             _inputManager = inputManager;
+        }
+        
+        public SubInputInterface(Action<T> register, Action<T> unregister)
+        {
+            _reg = register;
+            _unreg = unregister;
+            _inputManager = DI.Instance.Get<InputManager>();
         }
 
         public void SubscribeAction(bool isSub)

@@ -1,10 +1,8 @@
 ﻿using System;
-using Plugins.MaoUtility.CustonObject.Core;
 using Sirenix.OdinInspector;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Plugins.MaoUtility.CustonObject.So
+namespace Plugins.MaoUtility.ComplexsObject.Core
 {
     public abstract class ComplexObjectSoContainer<OBJ, CONFIG, DATA> : ScriptableObject 
         where DATA : class, ICloneable 

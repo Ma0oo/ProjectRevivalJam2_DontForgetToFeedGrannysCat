@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plugins.MaoUtility.DataBetweenScene
+namespace Plugins.MaoUtility.SceneShareData
 {
     public interface IShereSceneData : ICloneable
     {

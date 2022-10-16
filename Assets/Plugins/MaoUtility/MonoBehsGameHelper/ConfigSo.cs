@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using UnityEngine;
@@ -10,7 +9,7 @@ namespace Plugins.MaoUtility.MonoBehsGameHelper
     {
         private static T _instance;
         
-       [ShowInInspector, ReadOnly] private T _selectInstance => _instance;
+        [ShowInInspector, ReadOnly] private T _selectInstance => _instance;
         
         private static T[] Load() => Resources.LoadAll<T>("");
 

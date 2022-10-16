@@ -50,7 +50,7 @@ namespace DataGame.Sound
             
             void OnChangeLand()
             {
-                r.Component.Get<LabelIo>().SetTextById("KEY_"+nameField, "Установка имя поля для настроек в главном меню");    
+                r.Components.Get<LabelIo>().SetTextById("KEY_"+nameField, "Установка имя поля для настроек в главном меню");    
             }
         }
         

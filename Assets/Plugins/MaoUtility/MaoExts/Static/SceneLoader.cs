@@ -27,7 +27,7 @@ namespace Plugins.MaoUtility.MaoExts.Static
             
             onLoaded?.Invoke();
         }
-
+        
         #if UNITY_EDITOR
         [UnityEditor.MenuItem("Mao Tools/Fast restart scene")]
         private static void RestartSceneFromMenuItem() => Restart();

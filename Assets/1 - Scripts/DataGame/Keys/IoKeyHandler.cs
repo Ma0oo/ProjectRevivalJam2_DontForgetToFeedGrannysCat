@@ -62,7 +62,7 @@ namespace DataGame.Keys
 
             void OnChangeLand()
             {
-                btn.Component.Get<LabelIo>().SetTextById("KEY_"+nameField, "Установка имя поля для настроек в главном меню");    
+                btn.Components.Get<LabelIo>().SetTextById("KEY_"+nameField, "Установка имя поля для настроек в главном меню");    
             }
         }
 

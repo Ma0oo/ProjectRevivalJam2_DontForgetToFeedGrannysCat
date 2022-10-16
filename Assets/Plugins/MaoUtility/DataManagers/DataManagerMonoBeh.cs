@@ -18,4 +18,5 @@ namespace Plugins.MaoUtility.DataManagers
 
         public T2[] GetAll<T2>() where T2 : T => GetAll(x => x is T2).Cast<T2>().ToArray();
     }
+
 }

@@ -4,7 +4,7 @@ using Plugins.MaoUtility.DataManagers;
 using Sirenix.Utilities;
 using UnityEngine;
 
-namespace Plugins.MaoUtility.CustonObject.Core
+namespace Plugins.MaoUtility.ComplexsObject.Core
 {
     [System.Serializable]
     public abstract class ComplexObject<CONFIG, DATA> : ICloneable where CONFIG : class, ICloneable where DATA : class, ICloneable

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Plugins.MaoUtility.IoUi.Ext.DI
 {
-    public class RegisterSetting : RegisterDI
+    public class RegisterIoUi : RegisterDI
     {
         [SerializeField] private IoManager ioManager;
 

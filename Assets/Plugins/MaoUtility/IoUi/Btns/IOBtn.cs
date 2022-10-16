@@ -7,9 +7,9 @@ namespace Plugins.MaoUtility.IoUi.Btns
     [RequireComponent(typeof(ComponentManagerIoBtn))]
     public abstract class IOBtn<T> : MonoBehaviour
     {
-        public ComponentManagerIoBtn Component => _component??=GetComponent<ComponentManagerIoBtn>();
-        private ComponentManagerIoBtn _component;
-
+        public ComponentManagerIoBtn Components => _component??=GetComponent<ComponentManagerIoBtn>();
+        [SerializeField] private ComponentManagerIoBtn _component;
+        
         public abstract event Action<T, IOBtn<T>> Updated;
         public abstract void SetWithoutEvent(T value);
 

@@ -7,7 +7,7 @@ namespace Plugins.MaoUtility.SceneFlow
     {
         public OwnerSceneLogic Owner => _owner??=DI.Instance.Get<OwnerSceneLogic>();
         private OwnerSceneLogic _owner;
-        
+
         public virtual void PreAwake(){}
     }
 }
