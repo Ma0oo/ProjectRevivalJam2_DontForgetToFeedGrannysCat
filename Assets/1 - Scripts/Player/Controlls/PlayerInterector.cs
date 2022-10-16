@@ -43,10 +43,15 @@ namespace Player.Controlls
             Ray ray = new Ray(_point.transform.position, _point.transform.forward);
             if (Physics.Raycast(ray, out var info, _lenght, _mask)) 
             {
-                TryGetInterectObj(info.collider)
-                    ?.Interect(new ToggleInterect.InvertState())
-                    .Interect(new MoveByDoorAction(_doorMoveEntity));
-                Interected?.Invoke();
+                var interct = TryGetInterectObj(info.collider);
+                if (interct)
+                {
+                    interct?.Interect(new ToggleInterect.InvertState())
+                        .Interect(new MoveByDoorAction(_doorMoveEntity));
+                    Interected?.Invoke();
+                }
+                else
+                    NoToInterect?.Invoke();
             }
             else
             {

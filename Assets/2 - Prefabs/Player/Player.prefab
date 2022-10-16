@@ -429,22 +429,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sourceOnePrefab: {fileID: 7113336767393523904, guid: 6024228084edf1a45a0ea2b9140e5e74, type: 3}
   _pointOneSource: {fileID: 453584822682518803}
-  _sourceStep: {fileID: 1079734350041223278}
-  _durationChangeStep: 0.5
-  _volumeStep: 0.8
-  _step: {fileID: 0}
+  _pointStep: {fileID: 1276304995971240917}
+  _rangeBetweenStep: {x: 0.4, y: 0.6}
+  _step:
+    Clip: {fileID: 8300000, guid: 313fa6eb07f40784f87d7bb497f2c13c, type: 3}
+    Volume: 0.2
   _jump:
-    Clip: {fileID: 0}
-    Volume: 0.7
+    Clip: {fileID: 8300000, guid: 4e7b97bdc5b71af459c36334a54a3f05, type: 3}
+    Volume: 0.65
   _crouch:
-    Clip: {fileID: 0}
-    Volume: 0.7
+    Clip: {fileID: 8300000, guid: ab06ffccc6da2c3479f4fc68505d017b, type: 3}
+    Volume: 0.8
   _noToInterect:
-    Clip: {fileID: 0}
-    Volume: 0.7
+    Clip: {fileID: 8300000, guid: a3ec07a011573584a876cf4ad5181f73, type: 3}
+    Volume: 0.4
   _interected:
-    Clip: {fileID: 0}
-    Volume: 0.7
+    Clip: {fileID: 8300000, guid: 662b0382ac98aee49927ae34a687a180, type: 3}
+    Volume: 0.2
   _playerInterector: {fileID: 2704975892962223909}
   _crouchModule: {fileID: 2704975892971972940}
   _mover: {fileID: 2704975892971972937}

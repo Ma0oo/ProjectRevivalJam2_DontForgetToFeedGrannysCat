@@ -27,6 +27,8 @@ namespace Player.Controlls
         [Button]public void SetState(bool state)
         {
             _tweenChange?.Kill();
+            if(state) ToDown?.Invoke();
+            else ToUp?.Invoke();
             _isToOn = state;
             _tweenChange = DOTween.To(() => _progress, x => _progress = x, state ? 1 : 0, GetDuration())
                 .OnUpdate(() => ApplayData())

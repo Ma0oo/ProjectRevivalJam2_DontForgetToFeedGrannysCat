@@ -28,6 +28,8 @@ namespace Player.Controlls
         private bool _isJump;
         private bool _isRun=false;
 
+        public bool IsRun => _isRun;
+
         public event Action Jumped;
         public event Action Walked;
         public event Action NotWalked;
@@ -55,7 +57,8 @@ namespace Player.Controlls
         {
             CalculateProgress();
             _rigidbody.velocity = GetVelocity();
-            if (OnGround && _rigidbody.velocity.magnitude > Mathf.Epsilon)
+            
+            if (OnGround && _dir.magnitude > 0.1f)
             {
                 Walked?.Invoke();
             }
