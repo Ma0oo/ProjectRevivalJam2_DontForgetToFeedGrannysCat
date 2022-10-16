@@ -11,10 +11,7 @@ namespace Plugins.MaoUtility.SceneFlow
         public void PreAwake() => Datas.ForEach(x => x.PreAwake());
 
         [Button]
-        private void OnValidate()
-        {
-            Datas = FindObjectsOfType<SceneLogic>().ToList();
-            HashSet<Type> typeCehck = new HashSet<Type>();
-        }
+        private void OnValidate() 
+            => Datas = FindObjectsOfType<SceneLogic>(true).ToList();
     }
 }
