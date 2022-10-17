@@ -1,4 +1,5 @@
 ﻿using Plugins.MaoUtility.MaoExts.Static;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace DefaultNamespace.Cat
@@ -7,7 +8,7 @@ namespace DefaultNamespace.Cat
     {
         [SerializeField]private Transform _root;
 
-        public void Move(CatPoint point)
+        [Button] public void Move(CatPoint point)
         {
             _root.transform.position = point.transform.position;
             _root.transform.rotation = point.transform.rotation;

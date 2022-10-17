@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Sirenix.OdinInspector;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Plugins.MaoUtility.DataManagers
@@ -17,6 +19,8 @@ namespace Plugins.MaoUtility.DataManagers
         public T2 Get<T2>() where T2 : class, T => Get(x => x is T2) as T2;
 
         public T2[] GetAll<T2>() where T2 : T => GetAll(x => x is T2).Cast<T2>().ToArray();
+        
+        [Button] private void GetListByChild() => Datas = GetComponentsInChildren<T>().ToList();
     }
 
 }

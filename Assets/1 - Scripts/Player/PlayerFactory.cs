@@ -6,6 +6,8 @@ namespace DefaultNamespace.Player
 {
     public class PlayerFactory : MonoBehaviour
     {
+        public bool HasPlayer => _player != null;
+        
         [SerializeField] private PlayerUnit _playerUnit;
         
         private PlayerUnit _player;
