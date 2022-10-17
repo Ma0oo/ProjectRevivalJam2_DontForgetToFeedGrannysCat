@@ -31,6 +31,8 @@ namespace DefaultNamespace.ScenesLogic.Game
         [DiInject] private NightProvider _nightProvider;
         [DiInject] private SaveDataProvider _saveDataProvider;
 
+        public NightControl NightControl => _nightControl ??= Owner.Get<NightControl>();
+        private NightControl _nightControl;
         private GameResult _gameResult;
         private GameLoopData _data;
         private GameTime _gameTime;
@@ -45,6 +47,7 @@ namespace DefaultNamespace.ScenesLogic.Game
             _gameTime.Init(_data.NightSO); 
             _apartmentFactory.Init(_data.NightSO.Apartment);
             _player = _playerFactory.GetOrCreate();
+            NightControl.Init(_data.NightSO.Controller);
             
             _smGame.ChangeTo(StateGame.OnLoad);
             CoroutineGame.Instance.WaitFrame(3, Init);
@@ -61,6 +64,7 @@ namespace DefaultNamespace.ScenesLogic.Game
             _gameResult.Win += OnWin;
             _gameResult.Lose += OnLose;
             
+            NightControl.OnInited();
             _smGame.ChangeTo(StateGame.Gameloop);
         }
 

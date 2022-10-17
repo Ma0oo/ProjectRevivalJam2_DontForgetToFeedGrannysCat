@@ -26,6 +26,8 @@ MonoBehaviour:
       Master: 1
       Effect: 1
       Music: 1
+  DefaultProgress:
+    _night: 0
   GameScene: Game
   MenuScene: Menu
   MixerAudio: {fileID: 24100000, guid: 288910c4112cf534382a44cf505c12cb, type: 2}
@@ -41,3 +43,4 @@ MonoBehaviour:
     Name: Music
     Min: -80
     Max: 0
+  HeadCatModel: {fileID: -8839368762345780380, guid: 7336d24c5791ffc4cb23468e7a7a035d, type: 3}

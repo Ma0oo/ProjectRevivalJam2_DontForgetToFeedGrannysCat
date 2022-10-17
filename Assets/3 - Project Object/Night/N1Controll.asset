@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: N1Controll
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[{"identifier":"OnInited","_parameters":[],"_returns":{"_ID":"0d1976eb-8c5a-40e9-8a17-f41de6cf2031","_name":"Value"},"_position":{"x":120.0,"y":140.0},"$type":"FlowCanvas.Nodes.CustomFunctionEvent","$id":"0"},{"_method":{"_baseInfo":"UnityEngine.Debug|Log|System.Void","_paramsInfo":"System.Object"},"_callable":true,"_position":{"x":280.0,"y":120.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"1"},{"value":{"_value":"Init
+    scene"},"_position":{"x":120.0,"y":220.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"2"}],"connections":[{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"message","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.25
+    _category: 
+    _comments: 
+    _translation: {x: 217, y: 95}
+    _zoomFactor: 1
+  _haltSerialization: 0

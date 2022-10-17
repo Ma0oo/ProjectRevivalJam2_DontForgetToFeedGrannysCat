@@ -24,7 +24,8 @@ namespace DefaultNamespace
         public GroupMixer MixerEffect;
         public GroupMixer MixerMusic;
         
-
+        public Mesh HeadCatModel;
+        
         [System.Serializable]
         public class GroupMixer
         {
@@ -34,5 +35,7 @@ namespace DefaultNamespace
 
             public void SetValueToMixer(AudioMixer mixer, float normal) => mixer.SetFloat(Name, Mathf.Lerp(Min, Max, normal));
         }
+
+        
     }
 }

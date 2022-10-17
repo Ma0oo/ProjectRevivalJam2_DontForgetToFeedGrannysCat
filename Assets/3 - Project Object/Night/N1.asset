@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: N1
   m_EditorClassIdentifier: 
   Apartment: {fileID: 1917005875765388752, guid: 6f3f7c9ccde84b447885a050ea16c6fa, type: 3}
+  Controller: {fileID: 11400000, guid: 154ca6ad825756640941f5683ea03d39, type: 2}
   _hours:
   - Hour: 22
     DurationInSecond: 10

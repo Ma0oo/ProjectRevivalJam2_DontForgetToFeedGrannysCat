@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using DefaultNamespace.ApartmentSystem;
+using FlowCanvas;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.UIElements;
+using Object = UnityEngine.Object;
 
 namespace DefaultNamespace.ScenesLogic.Game
 {
@@ -14,6 +18,7 @@ namespace DefaultNamespace.ScenesLogic.Game
         public Apartment Apartment;
         
         public IReadOnlyCollection<HourData> Hours => _hours;
+        public FlowScript Controller;
         [SerializeField] private HourData[] _hours = new HourData[0];
 
         private void OnValidate()
@@ -44,5 +49,7 @@ namespace DefaultNamespace.ScenesLogic.Game
                 else Hour = preHourd.Hour + 1;
             }
         }
+        
+        
     }
 }
