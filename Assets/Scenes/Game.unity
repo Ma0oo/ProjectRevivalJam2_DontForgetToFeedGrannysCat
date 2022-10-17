@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0052771955, g: 0.008249264, b: 0.020307267, a: 1}
+  m_IndirectSpecularColor: {r: 0.020448789, g: 0.035595823, b: 0.02598188, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cacheMonoBeh:
   - {fileID: 641685932}
+  - {fileID: 641685934}
   - {fileID: 801123305}
   - {fileID: 801123308}
 --- !u!114 &104177466
@@ -799,6 +800,201 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea84302d57a44c889cbc52e0a861e06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &725579061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 725579062}
+  - component: {fileID: 725579064}
+  - component: {fileID: 725579063}
+  m_Layer: 0
+  m_Name: ViewTime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &725579062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725579061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 780216561}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &725579063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725579061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05efcce23dcd4bad886f6b87b5784b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gradient:
+    serializedVersion: 2
+    key0: {r: 0.12746687, g: 0.14183696, b: 0.45764422, a: 1}
+    key1: {r: 0.13416591, g: 0.14834993, b: 0.467106, a: 1}
+    key2: {r: 0.27100393, g: 0.2813872, b: 0.6603774, a: 0}
+    key3: {r: 0.9813543, g: 1, b: 0.48584908, a: 0}
+    key4: {r: 0.6603774, g: 0.46513644, b: 0.2834639, a: 0}
+    key5: {r: 0.05957044, g: 0.033463866, b: 0.1509434, a: 0}
+    key6: {r: 0.09541817, g: 0.069893956, b: 0.2274018, a: 0}
+    key7: {r: 0.14386792, g: 0.17865406, b: 0.5754717, a: 0}
+    ctime0: 1143
+    ctime1: 7947
+    ctime2: 10886
+    ctime3: 14805
+    ctime4: 40932
+    ctime5: 52635
+    ctime6: 60963
+    ctime7: 64501
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  _nameProp: _SkyTint
+--- !u!114 &725579064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725579061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef282b30551647c1b38ec016237acac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _light: {fileID: 1688307085}
+  _gradient:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 0.013323596, g: 0.013834078, b: 0.03246669, a: 1}
+    key2: {r: 0.7983268, g: 0.81924564, b: 0.8679245, a: 0}
+    key3: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 0}
+    key4: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 1143
+    ctime1: 9580
+    ctime2: 21936
+    ctime3: 40932
+    ctime4: 52635
+    ctime5: 60963
+    ctime6: 60963
+    ctime7: 60963
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 6
+    m_NumAlphaKeys: 2
+  _curveIntensive:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0015830994
+      value: 0.2062378
+      inSlope: -2.9455824
+      outSlope: -2.9455824
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10345119
+    - serializedVersion: 3
+      time: 0.0032861354
+      value: 0.19220945
+      inSlope: -7.9113097
+      outSlope: -7.9113097
+      tangentMode: 0
+      weightedMode: 2
+      inWeight: 0.33333334
+      outWeight: 0.11257163
+    - serializedVersion: 3
+      time: 0.047860943
+      value: -0.094216496
+      inSlope: 0.010412029
+      outSlope: 0.010412029
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.5034728
+      outWeight: 0.29236832
+    - serializedVersion: 3
+      time: 0.18578546
+      value: -0.09101613
+      inSlope: 0.23686251
+      outSlope: 0.23686251
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.3332697
+      outWeight: 0.3820193
+    - serializedVersion: 3
+      time: 0.2696606
+      value: 0.23595032
+      inSlope: 0.80004495
+      outSlope: 0.80004495
+      tangentMode: 0
+      weightedMode: 1
+      inWeight: 0.29876345
+      outWeight: 0.12959088
+    - serializedVersion: 3
+      time: 0.5155444
+      value: 0.6920123
+      inSlope: 0.05485642
+      outSlope: 0.05485642
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8089186
+      value: 0.18005273
+      inSlope: 0.034805503
+      outSlope: 0.034805503
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.2662539
+    - serializedVersion: 3
+      time: 0.99768066
+      value: 0.16827393
+      inSlope: 3.2753956
+      outSlope: 3.2753956
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15955214
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &770636452
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +1144,7 @@ Transform:
   m_Children:
   - {fileID: 641685930}
   - {fileID: 1485739784}
+  - {fileID: 725579062}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1645,7 +1842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1688307085
 Light:
   m_ObjectHideFlags: 0
@@ -1657,8 +1854,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.048282307, g: 0.07630852, b: 0.3301887, a: 1}
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

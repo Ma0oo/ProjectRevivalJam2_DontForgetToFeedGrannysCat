@@ -29,13 +29,13 @@ namespace DataGame.Keys
             Time.AllHourPass += OnEnd;
             
             OnNewHours(Time.CurrentHours);
-            OnNewNormal(Time.Normal);
+            OnNewNormal(Time.NormalHours);
             Time.AllHourPass += Stop;
         }
 
         private void OnTimeOnHourPass() => OnNewHours(Time.CurrentHours);
 
-        private void OnTimeOnNewNormal() => OnNewNormal(Time.Normal);
+        private void OnTimeOnNewNormal() => OnNewNormal(Time.NormalHours);
 
         private void Stop()
         {
