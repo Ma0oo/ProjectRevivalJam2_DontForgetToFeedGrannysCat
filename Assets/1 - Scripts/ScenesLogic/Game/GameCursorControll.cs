@@ -1,6 +1,7 @@
 ﻿using System;
 using DefaultNamespace.ScenesLogic.Game.Input;
 using NoSystem;
+using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.SceneFlow;
 using UnityEngine;
 

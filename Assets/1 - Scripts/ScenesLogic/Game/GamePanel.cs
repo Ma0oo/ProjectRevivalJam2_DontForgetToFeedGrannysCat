@@ -1,5 +1,7 @@
 ﻿using System;
+using DefaultNamespace.NoteSystem;
 using NoSystem;
+using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.MonoBehsGameHelper.UI;
 using Plugins.MaoUtility.SceneFlow;
@@ -7,6 +9,7 @@ using UnityEngine;
 
 namespace DefaultNamespace.ScenesLogic.Game.Input
 {
+    [DiMark]
     public class GamePanel : SceneLogic
     {
         [SerializeField] private PanelUI _win;
@@ -16,6 +19,8 @@ namespace DefaultNamespace.ScenesLogic.Game.Input
         private GameFlow GameFlow => Owner.Get<GameFlow>();
         
         private SubInputInterface<IGameInput> _sub;
+
+        [DiInject] private NoteServices _noteServices;
 
         public event Action<bool> NewStateMenuPanel;
 
@@ -43,7 +48,10 @@ namespace DefaultNamespace.ScenesLogic.Game.Input
 
         private void OnMenuGame()
         {
-            if(GameFlow.Sm.Current!=GameFlow.StateGame.Gameloop) return;
+            if (GameFlow.Sm.Current != GameFlow.StateGame.Gameloop ||
+                _noteServices.IsShowNote)
+                return;
+
             _menu.Invert();
             NewStateMenuPanel?.Invoke(_menu.IsOn);
         }

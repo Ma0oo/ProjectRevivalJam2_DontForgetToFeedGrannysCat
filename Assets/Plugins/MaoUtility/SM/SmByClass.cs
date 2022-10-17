@@ -11,7 +11,7 @@ namespace Plugins.MaoUtility.SM
         public override event Action<T> EnterTo;
         public override event Action<T, T> FailedChange;
 
-        [SerializeField] private T _current;
+        [SerializeReference] private T _current;
         
         public override void ChangeTo(T newState)
         {
@@ -23,7 +23,7 @@ namespace Plugins.MaoUtility.SM
                     return;
                 }
                 _current.Exit();
-                ExitFrom.Invoke(_current);
+                ExitFrom?.Invoke(_current);
                 
                 _current = newState;
                 _current.Enter();

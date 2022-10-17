@@ -1,3 +1,7 @@
 ﻿1) Добавить дженерик провайдера в SaveData
 2) Перевести как можно базовых классов в интерфейсы
 3) IsOn for PanelUI
+4) SmByClass: Fild TO SerializeReference
+5) SM, ChangeTO, void to bool
+6) One Interector from interect system
+7) SmByClass знак ? перед эвентом выхода

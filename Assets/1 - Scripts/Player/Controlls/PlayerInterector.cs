@@ -7,6 +7,7 @@ using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.InputModule.Core;
 using Plugins.MaoUtility.InterectSystem.Core.BasesClasses;
 using Plugins.MaoUtility.InterectSystem.Implementation;
+using Plugins.MaoUtility.InterectSystem.Implementation.OneceInterect;
 using UnityEngine;
 
 namespace Player.Controlls
@@ -46,8 +47,10 @@ namespace Player.Controlls
                 var interct = TryGetInterectObj(info.collider);
                 if (interct)
                 {
-                    interct?.Interect(new ToggleInterect.InvertState())
-                        .Interect(new MoveByDoorAction(_doorMoveEntity));
+                    interct
+                        .Interect(new ToggleInterect.InvertState())
+                        .Interect(new MoveByDoorAction(_doorMoveEntity))
+                        .Interect(new OnceInterectAction());
                     Interected?.Invoke();
                 }
                 else
