@@ -53,6 +53,7 @@ namespace ScenesLogic.Menu
             }
             else
             {
+                _fadeScreen.Off();
                 FadeOnStartOff?.Invoke();
             }
         }

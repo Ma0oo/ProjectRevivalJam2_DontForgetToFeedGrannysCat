@@ -5,6 +5,7 @@ using DefaultNamespace.ScenesLogic.Game.GameLose;
 using Plugins.MaoUtility.SceneFlow;
 using Sirenix.OdinInspector;
 using Unity.VisualScripting;
+using UnityEngine;
 
 namespace DefaultNamespace.ScenesLogic.Game
 {

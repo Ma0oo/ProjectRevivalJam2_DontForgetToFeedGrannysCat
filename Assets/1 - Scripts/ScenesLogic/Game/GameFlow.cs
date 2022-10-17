@@ -5,6 +5,7 @@ using DataGame.Save;
 using DefaultNamespace.ApartmentSystem;
 using DefaultNamespace.Player;
 using NoSystem;
+using Player.Controlls;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.MaoExts.Static;
 using Plugins.MaoUtility.SceneFlow;
@@ -13,6 +14,7 @@ using Plugins.MaoUtility.SM;
 using ScenesLogic.Menu;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 namespace DefaultNamespace.ScenesLogic.Game
@@ -32,6 +34,7 @@ namespace DefaultNamespace.ScenesLogic.Game
         private GameResult _gameResult;
         private GameLoopData _data;
         private GameTime _gameTime;
+        private PlayerUnit _player;
 
         private void Start()
         {
@@ -41,18 +44,19 @@ namespace DefaultNamespace.ScenesLogic.Game
             
             _gameTime.Init(_data.NightSO); 
             _apartmentFactory.Init(_data.NightSO.Apartment);
+            _player = _playerFactory.GetOrCreate();
             
             _smGame.ChangeTo(StateGame.OnLoad);
-            CoroutineGame.Instance.WaitFrame(3, ()=>Init(_playerFactory.GetOrCreate()));
+            CoroutineGame.Instance.WaitFrame(3, Init);
         }
 
-        private void Init(PlayerUnit player)
+        private void Init()
         {
             _fadeScreenScene.Off();
             
             List<PlayerSpawnPoint> _points = new List<PlayerSpawnPoint>();
             _apartmentFactory.App.Rooms.ForEach(x => x.RoomParts.GetAll<PlayerSpawnPoint>().ForEach(x => _points.Add(x)));
-            _points.GetRandom().Set(player);
+            _points.GetRandom().Set(_player);
 
             _gameResult.Win += OnWin;
             _gameResult.Lose += OnLose;
@@ -68,6 +72,9 @@ namespace DefaultNamespace.ScenesLogic.Game
             _gameResult.Win -= OnWin;
             _gameResult.Lose -= OnLose;
             _smGame.ChangeTo(StateGame.Win);
+            
+            _player.Parts.Get<PlayerController>().enabled = false;
+            _fadeScreenScene.On(()=>CoroutineGame.Instance.Wait(1, EnterToMenu));
         }
 
         private void OnLose()
@@ -75,6 +82,12 @@ namespace DefaultNamespace.ScenesLogic.Game
             _gameResult.Win -= OnWin;
             _gameResult.Lose -= OnLose;
             _smGame.ChangeTo(StateGame.Lose);
+        }
+
+        private void EnterToMenu()
+        {
+            SceneShareDataProvider.Instance.Remove(SceneShareDataProvider.Instance.Get<GameLoopData>());
+            SceneLoader.Load(ConfigGame.Instance.MenuScene);
         }
 
         private void OnDestroy()

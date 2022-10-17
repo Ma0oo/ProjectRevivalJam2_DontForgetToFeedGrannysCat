@@ -5,3 +5,4 @@
 5) SM, ChangeTO, void to bool
 6) One Interector from interect system
 7) SmByClass знак ? перед эвентом выхода
+8) Перенести EaseGetFromDi, LazyDi

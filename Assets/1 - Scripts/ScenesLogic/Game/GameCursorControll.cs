@@ -13,11 +13,11 @@ namespace ScenesLogic.Game
         {
             var gamePanel = Owner.Get<GamePanel>();
 
-            gamePanel.NewStateMenuPanel += StatePanel;
-            StatePanel(false);
+            gamePanel.NewStateMenuPanel += SetVisibelPanel;
+            SetVisibelPanel(false);
         }
 
-        private void StatePanel(bool obj)
+        private void SetVisibelPanel(bool obj)
         {
             if (obj)
             {
@@ -29,6 +29,11 @@ namespace ScenesLogic.Game
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
+        }
+
+        private void OnDestroy()
+        {
+            SetVisibelPanel(true);
         }
     }
 }
