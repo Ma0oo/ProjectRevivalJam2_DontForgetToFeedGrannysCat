@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625114ef92abc6f4d98f906588e93662, type: 3}
+  m_Name: AddNIghtEvent
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"FlowCanvas.Macros.Macro","nodes":[{"_type":{"_baseInfo":"System.Action"},"_position":{"x":-100.0,"y":640.0},"$type":"FlowCanvas.Nodes.DelegateCallbackEvent","$id":"0"},{"_constructor":{"_baseInfo":"DefaultNamespace.ScenesLogic.Game.ActionByGameTime|$Constructor","_paramsInfo":"System.Int32|System.Int32|System.Action"},"_position":{"x":180.0,"y":540.0},"$type":"FlowCanvas.Nodes.ReflectedConstructorNodeWrapper","$id":"1"},{"_method":{"_baseInfo":"DefaultNamespace.ScenesLogic.Game.GameTimeEvents|Add|System.Void","_paramsInfo":"DefaultNamespace.ScenesLogic.Game.ActionByGameTime"},"_callable":true,"_position":{"x":440.0,"y":340.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"2"},{"_position":{"x":700.0,"y":320.0},"$type":"FlowCanvas.Macros.MacroOutputNode","$id":"3"},{"_position":{"x":-120.0,"y":320.0},"$type":"FlowCanvas.Macros.MacroInputNode","$id":"4"}],"connections":[{"_sourcePortName":"Delegate","_targetPortName":"callback","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[System.Action,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Callback","_targetPortName":"6ecc9e09-c73a-4cca-adc6-bf86208171be","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"action","_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection`1[[DefaultNamespace.ScenesLogic.Game.ActionByGameTime,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"
+    ","_targetPortName":"37fb1afe-e9cf-4626-aed9-04b630972ecc","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"GameTimeEvents","_targetPortName":"9306bcd3-a409-4975-add4-188139967d79","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"5f687be0-17fa-45ad-818a-f4582d6d273d","_targetPortName":"GameTimeEvents","_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"e60933ff-ae18-439b-92cc-043c1c6f4a02","_targetPortName":"
+    ","_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"139bae1c-971c-44f2-83df-cfe3b36c5299","_targetPortName":"hour","_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"1b86c3be-c387-4827-8b4e-074f1c720bc5","_targetPortName":"minute","_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"inputDefinitions":[{"_ID":"5f687be0-17fa-45ad-818a-f4582d6d273d","_name":"GameTimeEvents","_type":"DefaultNamespace.ScenesLogic.Game.GameTimeEvents"},{"_ID":"e60933ff-ae18-439b-92cc-043c1c6f4a02","_name":"Flow
+    Input","_type":"FlowCanvas.Flow"},{"_ID":"139bae1c-971c-44f2-83df-cfe3b36c5299","_name":"Hours","_type":"System.Int32"},{"_ID":"1b86c3be-c387-4827-8b4e-074f1c720bc5","_name":"Minute","_type":"System.Int32"}],"outputDefinitions":[{"_ID":"37fb1afe-e9cf-4626-aed9-04b630972ecc","_name":"Flow
+    Output","_type":"FlowCanvas.Flow"},{"_ID":"9306bcd3-a409-4975-add4-188139967d79","_name":"GameTimeEvents
+    Output","_type":"DefaultNamespace.ScenesLogic.Game.GameTimeEvents"},{"_ID":"6ecc9e09-c73a-4cca-adc6-bf86208171be","_name":"EventFLow","_type":"FlowCanvas.Flow"}],"$type":"FlowCanvas.Macros.Macro+DerivedSerializationData"}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.25
+    _category: 
+    _comments: 
+    _translation: {x: 239, y: -42}
+    _zoomFactor: 1
+  _haltSerialization: 0
+  inputDefinitions:
+  - _ID: 5f687be0-17fa-45ad-818a-f4582d6d273d
+    _name: GameTimeEvents
+    _type: DefaultNamespace.ScenesLogic.Game.GameTimeEvents
+  - _ID: e60933ff-ae18-439b-92cc-043c1c6f4a02
+    _name: Flow Input
+    _type: FlowCanvas.Flow
+  - _ID: 139bae1c-971c-44f2-83df-cfe3b36c5299
+    _name: Hours
+    _type: System.Int32
+  - _ID: 1b86c3be-c387-4827-8b4e-074f1c720bc5
+    _name: Minute
+    _type: System.Int32
+  outputDefinitions:
+  - _ID: 37fb1afe-e9cf-4626-aed9-04b630972ecc
+    _name: Flow Output
+    _type: FlowCanvas.Flow
+  - _ID: 9306bcd3-a409-4975-add4-188139967d79
+    _name: GameTimeEvents Output
+    _type: DefaultNamespace.ScenesLogic.Game.GameTimeEvents
+  - _ID: 6ecc9e09-c73a-4cca-adc6-bf86208171be
+    _name: EventFLow
+    _type: FlowCanvas.Flow

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004997871, g: 0.0071139783, b: 0.017119825, a: 1}
+  m_IndirectSpecularColor: {r: 0.005189156, g: 0.007830862, b: 0.02522261, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1340,6 +1340,7 @@ GameObject:
   - component: {fileID: 801123310}
   - component: {fileID: 801123312}
   - component: {fileID: 801123311}
+  - component: {fileID: 801123313}
   m_Layer: 0
   m_Name: Logic Scene
   m_TagString: Untagged
@@ -1484,6 +1485,18 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 801123311}
+--- !u!114 &801123313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801123303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f7c44f014440a8909a15d4201c40d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &828461725
 GameObject:
   m_ObjectHideFlags: 0

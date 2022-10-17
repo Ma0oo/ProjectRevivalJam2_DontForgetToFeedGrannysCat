@@ -12,16 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
   m_Name: N1Controll
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[{"identifier":"OnInited","_parameters":[],"_returns":{"_ID":"0d1976eb-8c5a-40e9-8a17-f41de6cf2031","_name":"Value"},"_position":{"x":120.0,"y":140.0},"$type":"FlowCanvas.Nodes.CustomFunctionEvent","$id":"0"},{"_method":{"_baseInfo":"UnityEngine.Debug|Log|System.Void","_paramsInfo":"System.Object"},"_callable":true,"_position":{"x":280.0,"y":120.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"1"},{"value":{"_value":"Init
-    scene"},"_position":{"x":120.0,"y":220.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.String,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"2"}],"connections":[{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"message","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[System.Object,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
-  _objectReferences: []
+  _serializedGraph: '{"type":"FlowCanvas.FlowScript","nodes":[{"identifier":"OnInited","_parameters":[],"_returns":{"_ID":"0d1976eb-8c5a-40e9-8a17-f41de6cf2031","_name":"Value"},"_UID":"75478633-3dd5-411f-8e4d-55ee37d58567","_position":{"x":100.0,"y":260.0},"$type":"FlowCanvas.Nodes.CustomFunctionEvent","$id":"0"},{"targetVariable":{"_name":"Events","_targetVariableID":"5bf19349-89f5-4336-a7ba-2eefeccd8bd2"},"_position":{"x":300.0,"y":260.0},"$type":"FlowCanvas.Nodes.SetVariable`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"1"},{"_macro":1,"_position":{"x":520.0,"y":260.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"2"},{"_macro":1,"_inputPortValues":{"139bae1c-971c-44f2-83df-cfe3b36c5299":{"$content":1,"$type":"System.Int32"},"1b86c3be-c387-4827-8b4e-074f1c720bc5":{"$content":30,"$type":"System.Int32"}},"_color":{"r":1.0,"g":0.8941177,"b":0.8823529,"a":1.0},"_position":{"x":940.0,"y":260.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"3"},{"_sourceOutputUID":"545b3462-f946-4a27-88eb-bd72a65e8b86","_inputPortValues":{"1b96c43f-a356-4930-b8f6-1643ff2cd60f":{"$content":"\u0413\u0414\u0415
+    \u0442\u043e \u0427\u0410\u0421 \u0438 30 \u043c\u0438\u043d\u0443\u0442!","$type":"System.String"}},"_color":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":1280.0,"y":460.0},"$type":"FlowCanvas.Nodes.CustomFunctionCall","$id":"4"},{"_sourceOutputUID":"545b3462-f946-4a27-88eb-bd72a65e8b86","_inputPortValues":{"1b96c43f-a356-4930-b8f6-1643ff2cd60f":{"$content":"\u041f\u041e\u041b\u041d\u041e\u0427\u042c","$type":"System.String"}},"_position":{"x":860.0,"y":460.0},"$type":"FlowCanvas.Nodes.CustomFunctionCall","$id":"5"},{"identifier":"Log","_parameters":[{"_ID":"1b96c43f-a356-4930-b8f6-1643ff2cd60f","_name":"String","_type":"System.String"}],"_returns":{"_ID":"afec93bf-fde7-493e-aba4-49fc8ffa86c4","_name":"Value"},"_UID":"545b3462-f946-4a27-88eb-bd72a65e8b86","_position":{"x":300.0,"y":640.0},"$type":"FlowCanvas.Nodes.CustomFunctionEvent","$id":"6"},{"_method":{"_baseInfo":"UnityEngine.Debug|Log|System.Void","_paramsInfo":"System.Object"},"_callable":true,"_position":{"x":480.0,"y":640.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"7"},{"_macro":2,"_position":{"x":-140.0,"y":360.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"8"},{"_method":{"_baseInfo":"Plugins.MaoUtility.DataManagers.DataManagerMonoBeh`1[[Plugins.MaoUtility.SceneFlow.SceneLogic,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]|Get|DefaultNamespace.ScenesLogic.Game.GameTimeEvents","_paramsInfo":"","_genericArgumentsInfo":"DefaultNamespace.ScenesLogic.Game.GameTimeEvents"},"_position":{"x":40.0,"y":360.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"9"}],"connections":[{"_sourcePortName":"
+    ","_targetPortName":"In","_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"e60933ff-ae18-439b-92cc-043c1c6f4a02","_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"5f687be0-17fa-45ad-818a-f4582d6d273d","_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"37fb1afe-e9cf-4626-aed9-04b630972ecc","_targetPortName":"e60933ff-ae18-439b-92cc-043c1c6f4a02","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"9306bcd3-a409-4975-add4-188139967d79","_targetPortName":"5f687be0-17fa-45ad-818a-f4582d6d273d","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"6ecc9e09-c73a-4cca-adc6-bf86208171be","_targetPortName":"
+    ","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"6ecc9e09-c73a-4cca-adc6-bf86208171be","_targetPortName":"
+    ","_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"1b96c43f-a356-4930-b8f6-1643ff2cd60f","_targetPortName":"message","_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"FlowCanvas.BinderConnection`1[[System.Object,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"c581f7e6-ab73-4f0b-ac7c-a31b917cade4","_targetPortName":"DataManagerMonoBeh
+    (SceneLogic)","_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"9"},"$type":"FlowCanvas.BinderConnection`1[[Plugins.MaoUtility.DataManagers.DataManagerMonoBeh`1[[Plugins.MaoUtility.SceneFlow.SceneLogic,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Value","_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"1"},"$type":"FlowCanvas.BinderConnection`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"canvasGroups":[],"localBlackboard":{"_variables":{"Events":{"_name":"Events","_id":"5bf19349-89f5-4336-a7ba-2eefeccd8bd2","_isPublic":true,"$type":"NodeCanvas.Framework.Variable`1[[DefaultNamespace.ScenesLogic.Game.GameTimeEvents,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: ec8bf96b072152448b797917f4e2ed4e, type: 2}
+  - {fileID: 11400000, guid: 5d8673a549123684a8790f5301c1ddb2, type: 2}
   _graphSource:
     _version: 3.25
     _category: 
     _comments: 
-    _translation: {x: 217, y: 95}
-    _zoomFactor: 1
+    _translation: {x: 50.000008, y: 21.000006}
+    _zoomFactor: 0.9953245
   _haltSerialization: 0
