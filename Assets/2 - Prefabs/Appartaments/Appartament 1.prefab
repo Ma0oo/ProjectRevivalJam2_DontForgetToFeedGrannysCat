@@ -2448,7 +2448,7 @@ PrefabInstance:
       objectReference: {fileID: -7016070952596360806, guid: 72d539631a35c214aa77facfe2423733, type: 3}
     - target: {fileID: -7016070952596360806, guid: 72d539631a35c214aa77facfe2423733, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7016070952596360806, guid: 72d539631a35c214aa77facfe2423733, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
@@ -2456,7 +2456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7016070952596360806, guid: 72d539631a35c214aa77facfe2423733, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7016070952596360806, guid: 72d539631a35c214aa77facfe2423733, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
@@ -40035,6 +40035,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7471009539381925640, guid: d420e4c39c459e946b9ce00839864989, type: 3}
+    - target: {fileID: 7540319316395106495, guid: d420e4c39c459e946b9ce00839864989, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 7540319316395106495, guid: d420e4c39c459e946b9ce00839864989, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d420e4c39c459e946b9ce00839864989, type: 3}
 --- !u!4 &9005432947491366177 stripped

@@ -1,4 +1,6 @@
-﻿using Plugins.MaoUtility.DataManagers;
+﻿using System;
+using Plugins.MaoUtility.DataManagers;
+using Sirenix.Serialization;
 using TMPro;
 using UnityEngine;
 
@@ -13,7 +15,8 @@ namespace DefaultNamespace.ItemSystem
         public Item Clone()
         {
             var r = new Item();
-            r._itemConfigManager = _itemConfigManager.Clone() as ItemConfigManager;
+            //DONT COPY, JUST LINK
+            r._itemConfigManager = _itemConfigManager; 
             return r;
         }
     }

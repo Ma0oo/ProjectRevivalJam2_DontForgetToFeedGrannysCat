@@ -10,16 +10,29 @@ namespace DefaultNamespace.ItemSystem.Inventory
     [System.Serializable]
     public abstract class InventoryBase : IInventory
     {
-        [ShowInInspector] protected HashSet<Item> Items = new HashSet<Item>();
+        [ShowInInspector] protected HashSet<Item> ItemsContaints = new HashSet<Item>();
+
+        public IReadOnlyCollection<Item> Items => ItemsContaints;
+        public event Action<Item> Added;
+        public event Action<Item> Removed;
 
         public bool Add(Item item)
         {
             var r = ValidateAdd(item);
-            if (r) Items.Add(item);
+            if (r)
+            {
+                ItemsContaints.Add(item);
+                Added?.Invoke(item);
+            }
             return r;
         }
 
-        public bool Remove(Item item) => Items.Remove(item);
+        public bool Remove(Item item)
+        {
+            var r = ItemsContaints.Remove(item);
+            if(r) Removed?.Invoke(item);
+            return r;
+        }
 
         public abstract bool ValidateAdd(Item item);
     }

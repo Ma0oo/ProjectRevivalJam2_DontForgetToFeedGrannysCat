@@ -1,12 +1,14 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 
 namespace DefaultNamespace.ItemSystem
 {
     [CreateAssetMenu(menuName = "Games/ItemSo")]
-    public class ItemSo : ScriptableObject
+    public class ItemSo : SerializedScriptableObject
     {
         public Item ClonedItem => _item.Clone();
-        [SerializeField, HideLabel] private Item _item;
+        [SerializeField] private Item _item;
     }
 }
