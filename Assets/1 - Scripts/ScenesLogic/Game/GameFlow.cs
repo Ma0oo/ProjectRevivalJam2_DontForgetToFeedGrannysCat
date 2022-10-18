@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DataGame.Save;
 using DefaultNamespace.ApartmentSystem;
+using DefaultNamespace.Cat;
 using DefaultNamespace.Player;
 using NoSystem;
 using Player.Controlls;
@@ -30,6 +31,7 @@ namespace DefaultNamespace.ScenesLogic.Game
         [DiInject] private ApartmentFactory _apartmentFactory;
         [DiInject] private NightProvider _nightProvider;
         [DiInject] private SaveDataProvider _saveDataProvider;
+        [DiInject] private CatFactory _catFactory;
 
         public NightControl NightControl => _nightControl ??= Owner.Get<NightControl>();
         private NightControl _nightControl;
@@ -56,16 +58,25 @@ namespace DefaultNamespace.ScenesLogic.Game
         private void Init()
         {
             _fadeScreenScene.Off();
-            
-            List<PlayerSpawnPoint> _points = new List<PlayerSpawnPoint>();
-            _apartmentFactory.App.Rooms.ForEach(x => x.RoomParts.GetAll<PlayerSpawnPoint>().ForEach(x => _points.Add(x)));
-            _points.GetRandom().Set(_player);
+
+            List<PlayerSpawnPoint> pointPlayer = GetAll<PlayerSpawnPoint>(_apartmentFactory.App);
+            pointPlayer.GetRandom().Set(_player);
+
+            var pointCat = GetAll<CatPoint>(_apartmentFactory.App);
+            _catFactory.Create(_data.NightSO.Cat, pointCat.GetRandom());
 
             _gameResult.Win += OnWin;
             _gameResult.Lose += OnLose;
             
             NightControl.OnInited();
             _smGame.ChangeTo(StateGame.Gameloop);
+        }
+
+        private List<T> GetAll<T>(Apartment apartment) where T : IRoomPart
+        {
+            List<T> result = new List<T>();
+            apartment.Rooms.ForEach(x => x.RoomParts.GetAll<T>().ForEach(x => result.Add(x)));
+            return result;
         }
 
         private void OnWin()

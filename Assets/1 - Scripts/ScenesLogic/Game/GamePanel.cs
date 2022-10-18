@@ -13,7 +13,6 @@ namespace DefaultNamespace.ScenesLogic.Game.Input
     public class GamePanel : SceneLogic
     {
         [SerializeField] private PanelUI _win;
-        [SerializeField] private PanelUI _lose;
         [SerializeField] private PanelUI _menu;
         
         private GameFlow GameFlow => Owner.Get<GameFlow>();
@@ -43,7 +42,6 @@ namespace DefaultNamespace.ScenesLogic.Game.Input
                 }
             }
             if (obj == GameFlow.StateGame.Win) _win.SetActive(true);
-            if(obj == GameFlow.StateGame.Lose) _lose.SetActive(true);
         }
 
         private void OnMenuGame()

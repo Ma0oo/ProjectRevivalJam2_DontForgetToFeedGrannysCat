@@ -7,3 +7,4 @@
 7) SmByClass знак ? перед эвентом выхода
 8) Перенести EaseGetFromDi, LazyDi
 9) GetComponentsInChildren<T>().ToList() button for datamanagers
+10) Перенос скриптовой части

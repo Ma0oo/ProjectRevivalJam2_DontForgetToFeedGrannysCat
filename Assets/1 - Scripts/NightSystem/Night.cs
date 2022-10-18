@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using DefaultNamespace.ApartmentSystem;
+using DefaultNamespace.Cat;
 using FlowCanvas;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
@@ -20,6 +21,7 @@ namespace DefaultNamespace.ScenesLogic.Game
         public IReadOnlyCollection<HourData> Hours => _hours;
         public FlowScript Controller;
         [SerializeField] private HourData[] _hours = new HourData[0];
+        public CatUnit Cat;
 
         private void OnValidate()
         {
