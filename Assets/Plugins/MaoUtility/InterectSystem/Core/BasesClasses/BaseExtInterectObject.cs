@@ -1,10 +1,11 @@
 ﻿using System;
 using Plugins.MaoUtility.MaoExts.Static;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Plugins.MaoUtility.InterectSystem.Core.BasesClasses
 {
-    public abstract class BaseExtInterectObject : MonoBehaviour
+    public abstract class BaseExtInterectObject : SerializedMonoBehaviour
     {
         [SerializeField] private InterectObject _interectObject;
 

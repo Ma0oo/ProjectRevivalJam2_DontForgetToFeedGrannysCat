@@ -4583,6 +4583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1796071338}
     m_Modifications:
+    - target: {fileID: -6220617968301235923, guid: 623f0d811226a904fb79a1412a55fb65, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: -6220617968301235923, guid: 623f0d811226a904fb79a1412a55fb65, type: 3}
     - target: {fileID: 2715610781178044636, guid: 623f0d811226a904fb79a1412a55fb65, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -5974,6 +5978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1796071338}
     m_Modifications:
+    - target: {fileID: -6220617968301235923, guid: 623f0d811226a904fb79a1412a55fb65, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: -6220617968301235923, guid: 623f0d811226a904fb79a1412a55fb65, type: 3}
     - target: {fileID: 2715610781178044636, guid: 623f0d811226a904fb79a1412a55fb65, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647

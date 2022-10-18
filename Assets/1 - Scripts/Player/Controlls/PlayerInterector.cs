@@ -1,4 +1,6 @@
 ﻿using System;
+using DefaultNamespace.ItemSystem.Inventory;
+using DefaultNamespace.ItemSystem.Inventory.Ext.Interect;
 using DoorSystem;
 using DoorSystem.Ext.Interect;
 using Player.Input;
@@ -21,6 +23,7 @@ namespace Player.Controlls
         [SerializeField] private float _lenght;
         [SerializeField] private LayerMask _mask;
         [SerializeField] private DoorMoveEntity _doorMoveEntity;
+        [SerializeField] private BaseMonoInventory _inventory;
 
         public event Action NoToInterect;
         public event Action Interected;
@@ -50,7 +53,8 @@ namespace Player.Controlls
                     interct
                         .Interect(new ToggleInterect.InvertState())
                         .Interect(new MoveByDoorAction(_doorMoveEntity))
-                        .Interect(new OnceInterectAction());
+                        .Interect(new OnceInterectAction())
+                        .Interect(new AddToInventory(_inventory));
                     Interected?.Invoke();
                 }
                 else
