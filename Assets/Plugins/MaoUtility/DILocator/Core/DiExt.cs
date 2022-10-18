@@ -19,21 +19,23 @@ namespace Plugins.MaoUtility.DILocator.Core
             foreach (var monoBehaviour in monobehs) monoBehaviour.InjectObj(context);
         }
 
-        public static GameObject SpawnWithDi(GameObject prefab, DI context, bool includedChilds = true)
+        public static GameObject SpawnWithDi(this GameObject prefab, DI context, bool includedChilds = true)
         {
             prefab.SetActive(false);
             var result = prefab.Spawn();
             prefab.SetActive(true);
             result.InjectGO(context, includedChilds);
+            result.SetActive(true);
             return result;
         }
         
-        public static T SpawnWithDi<T>(T prefab, DI context, bool includedChilds = true) where T : Component
+        public static T SpawnWithDi<T>(this T prefab, DI context, bool includedChilds = true) where T : Component
         {
             prefab.gameObject.SetActive(false);
             var result = prefab.Spawn();
             prefab.gameObject.SetActive(true);
             result.gameObject.InjectGO(context, includedChilds);
+            result.gameObject.SetActive(true);
             return result;
         }
     }

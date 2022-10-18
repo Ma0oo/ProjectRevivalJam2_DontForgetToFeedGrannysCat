@@ -8,3 +8,4 @@
 8) Перенести EaseGetFromDi, LazyDi
 9) GetComponentsInChildren<T>().ToList() button for datamanagers
 10) Перенос скриптовой части
+11) DiExt - MakeDiSpawn(Di.Instancec), добавить this

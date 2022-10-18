@@ -25,6 +25,8 @@ MonoBehaviour:
     _itemConfigManager:
       Datas:
       - rid: 3340486075250114561
+      - rid: 3340486077329440769
+      - rid: 3340486077329440772
   references:
     version: 2
     RefIds:
@@ -32,3 +34,11 @@ MonoBehaviour:
       type: {class: ViewItemInUI/ViewItemInUI_CFG, ns: DefaultNamespace.ItemSystem.ViewInUI, asm: Assembly-CSharp}
       data:
         Icon: {fileID: 21300000, guid: edd8b4f9461c20e4c8c6047385648b9b, type: 3}
+    - rid: 3340486077329440769
+      type: {class: HandViewModel/HandViewModel_CFG, ns: DefaultNamespace.Player.Inventory.HandView, asm: Assembly-CSharp}
+      data:
+        _prefabModel: {fileID: 4826074440527710192, guid: 7c01eda9cd44daf438ab926ab0e940f0, type: 3}
+    - rid: 3340486077329440772
+      type: {class: ViewItemInWorld/ViewItemInWorld_CFG, ns: DefaultNamespace.ItemSystem.ViewInGameWorld, asm: Assembly-CSharp}
+      data:
+        _view: {fileID: 6627265107795889308, guid: 1d9f0f8a4e7990344bbfaf0c206a072a, type: 3}

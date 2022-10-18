@@ -16,5 +16,18 @@ namespace DefaultNamespace.ItemSystem.ViewInGameWorld
             _item = item;
             Inited?.Invoke(item);
         }
+        
+        public class ViewItemInWorld_CFG : ItemConfig
+        {
+            public ViewItemInWorld View => _view;
+            [SerializeField] private ViewItemInWorld _view;
+            
+            public override object Clone()
+            {
+                var r = new ViewItemInWorld_CFG();
+                r._view = _view;
+                return r;
+            }
+        }
     }
 }
