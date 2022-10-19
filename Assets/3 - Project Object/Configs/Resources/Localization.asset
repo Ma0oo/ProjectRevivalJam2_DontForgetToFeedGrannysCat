@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be76ea7f5a5480f91140a2e8ce793d7, type: 3}
   m_Name: Localization
   m_EditorClassIdentifier: 
-  _writeRequest: 0
+  _writeRequest: 1
   PathToWrite: LocaliiationLog
   PathByAssets: 1
   DefaultLang: {fileID: 11400000, guid: 27dcf520b514717419e39fd5a81e766b, type: 2}

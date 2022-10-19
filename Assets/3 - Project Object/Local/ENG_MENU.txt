@@ -33,4 +33,14 @@
     "CREDIT_ASSETS":"Other",
     "CREDIT_PSX_SHADER":"PSX SHADER",
     "CREDIT_PSX_SHADER_LINK":"Asset Store",
+    
+    "KEY_NIGHTLABEL":"Night",
+    
+    "KEY_MONDAY":"Monday",
+    "KEY_TUESDAY":"Tuesday",
+    "KEY_WEDNESDAY":"Wednesday",
+    "KEY_THURSDAY":"Thursday",
+    "KEY_FRIDAY":"Friday",
+    "KEY_SATURDAY":"Saturday",
+    "KEY_SUNDAY":"Sunday",
 }

@@ -33,4 +33,14 @@
     "CREDIT_ASSETS":"Другое",
     "CREDIT_PSX_SHADER":"PSX Шейдер",
     "CREDIT_PSX_SHADER_LINK":"Магазин юнити",
+    
+    "KEY_NIGHTLABEL":"Ночь",
+        
+    "KEY_MONDAY":"Понедельник",
+    "KEY_TUESDAY":"Вторник",
+    "KEY_WEDNESDAY":"Среда",
+    "KEY_THURSDAY":"Чертверг",
+    "KEY_FRIDAY":"Пятница",
+    "KEY_SATURDAY":"Субота",
+    "KEY_SUNDAY":"Воскресенье",
 }
