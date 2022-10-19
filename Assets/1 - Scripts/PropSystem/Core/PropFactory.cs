@@ -19,7 +19,7 @@ namespace DefaultNamespace.PropSystem
             prefab.gameObject.SetActive(true);
             r.gameObject.InjectGO(DI.Instance);
             _props.Add(r);
-            r.Props.GetAll<IInitProp>().ForEach(x => x.Init());
+            r.Parts.GetAll<IInitProp>().ForEach(x => x.Init());
             r.gameObject.SetActive(true);
             return r;
         }

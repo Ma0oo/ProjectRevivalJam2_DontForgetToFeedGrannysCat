@@ -7,7 +7,7 @@ namespace DefaultNamespace.PropSystem
     [RequireComponent(typeof(PropParts))]
     public class Prop : MonoBehaviour
     {
-        public IGeterDataManager<IPropPart> Props=>_parts??=GetComponent<PropParts>();
+        public IGeterDataManager<IPropPart> Parts=>_parts??=GetComponent<PropParts>();
         [SerializeField] private PropParts _parts;
     }
 }

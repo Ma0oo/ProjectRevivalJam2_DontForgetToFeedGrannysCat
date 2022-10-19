@@ -249,4 +249,15 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  Cat: {fileID: 2845643304694661223, guid: c4fe4e0ef7e70b7458759fa455e1019c, type: 3}
+  Cats:
+  - Cat: {fileID: 2845643304694661223, guid: c4fe4e0ef7e70b7458759fa455e1019c, type: 3}
+    Datas:
+    - rid: 3340486077329440773
+  references:
+    version: 2
+    RefIds:
+    - rid: 3340486077329440773
+      type: {class: CatHunger/DataHunger, ns: DefaultNamespace.Cat.HungerSystem, asm: Assembly-CSharp}
+      data:
+        CountFeed: 180
+        SpeedDownInSecond: 1

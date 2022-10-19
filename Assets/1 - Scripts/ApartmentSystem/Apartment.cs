@@ -11,5 +11,26 @@ namespace DefaultNamespace.ApartmentSystem
         [SerializeField] private Room[] _rooms;
 
         private void OnValidate() => _rooms = GetComponentsInChildren<Room>();
+
+        public T GetRoomPart<T>() where T : class, IRoomPart
+        {
+            foreach (var room in Rooms)
+            {
+                var r = room.RoomParts.Get<T>();
+                if (r != null) return r;
+            }
+            return null;
+        }
+        
+        public List<T> GetAllRoomPart<T>() where T : class, IRoomPart
+        {
+            List<T> reult = new List<T>();
+            foreach (var room in Rooms)
+            {
+                var r = room.RoomParts.Get<T>();
+                if (r != null) reult.Add(r);
+            }
+            return reult;
+        }
     }
 }

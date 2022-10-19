@@ -9,3 +9,4 @@
 9) GetComponentsInChildren<T>().ToList() button for datamanagers
 10) Перенос скриптовой части
 11) DiExt - MakeDiSpawn(Di.Instancec), добавить this
+12) IValueContainer add event

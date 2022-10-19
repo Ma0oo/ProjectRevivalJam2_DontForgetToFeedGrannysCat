@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DefaultNamespace.ItemSystem
 {
-    [CreateAssetMenu(menuName = "Games/ItemSo")]
+    [CreateAssetMenu(menuName = "Game/ItemSo")]
     public class ItemSo : SerializedScriptableObject
     {
         public Item ClonedItem => _item.Clone();

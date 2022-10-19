@@ -4,6 +4,7 @@ using System.Linq;
 using DataGame.Save;
 using DefaultNamespace.ApartmentSystem;
 using DefaultNamespace.Cat;
+using DefaultNamespace.Cat.InitData;
 using DefaultNamespace.Player;
 using NoSystem;
 using Player.Controlls;
@@ -15,6 +16,7 @@ using Plugins.MaoUtility.SM;
 using ScenesLogic.Menu;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
 
@@ -63,13 +65,21 @@ namespace DefaultNamespace.ScenesLogic.Game
             pointPlayer.GetRandom().Set(_player);
 
             var pointCat = GetAll<CatPoint>(_apartmentFactory.App);
-            _catFactory.Create(_data.NightSO.Cat, pointCat.GetRandom());
+            _data.NightSO.Cats.ForEach(x=>SpawnCat(x, pointCat));
 
             _gameResult.Win += OnWin;
             _gameResult.Lose += OnLose;
             
             NightControl.OnInited();
             _smGame.ChangeTo(StateGame.Gameloop);
+        }
+
+        private void SpawnCat(Night.CatData catData, List<CatPoint> pointCat)
+        {
+            var point = pointCat.GetRandom();
+            pointCat.Remove(point);
+            var r =_catFactory.Create(catData.Cat, point);
+            r.Parts.GetAll<IInitGameDataCat>().ForEach(x => x.Init(catData.Datas));
         }
 
         private List<T> GetAll<T>(Apartment apartment) where T : IRoomPart
