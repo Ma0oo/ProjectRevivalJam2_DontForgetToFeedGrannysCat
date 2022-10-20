@@ -1,5 +1,6 @@
 ﻿using System;
 using Lean.Gui;
+using Plugins.MaoUtility.Localization.Core;
 using Plugins.MaoUtility.MonoBehsGameHelper.UI;
 using UnityEngine;
 

@@ -18,7 +18,7 @@ namespace DefaultNamespace.Cat.HungerSystem
         [SerializeField] private LoseGameComponent _loseGameComponent;
         private GameTime _time;
 
-        private void Init(OwnerSceneLogic ownerSceneLogic) => _time = ownerSceneLogic.Get<GameTime>();
+        [DiInject]private void Init(OwnerSceneLogic ownerSceneLogic) => _time = ownerSceneLogic.Get<GameTime>();
 
         private void Start()
         {

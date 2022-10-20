@@ -1,5 +1,6 @@
 ﻿using System;
 using DataGame.Keys;
+using DataGame.Other;
 using DataGame.Sound;
 using DoorSystem;
 using Newtonsoft.Json;
@@ -16,6 +17,7 @@ namespace DataGame
 
         public KeyConfig Keys;
         public SoundConfig SoundConfig;
+        public OtherDataSetting OtherDataSetting = new OtherDataSetting();
         
         public abstract class Event { }
         

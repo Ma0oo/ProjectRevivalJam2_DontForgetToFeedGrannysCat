@@ -2,6 +2,7 @@
 using DataGame.Save;
 using DefaultNamespace.ScenesLogic.Game;
 using Plugins.MaoUtility.DILocator.Atr;
+using Plugins.MaoUtility.Localization.Core;
 using Plugins.MaoUtility.Localization.Utility;
 using Sirenix.OdinInspector;
 using TMPro;
@@ -16,12 +17,19 @@ namespace DataGame.Keys
         [SerializeField] private TextMeshProUGUI _label;
 
         [DiInject] private SaveDataProvider _saveDataProvider;
+        [DiInject] private Localizator _localizator;
+        private int _lastI;
 
-        private void Start() => SetDay(_saveDataProvider.Current.Night);
+        private void Start()
+        {
+            SetDay(_saveDataProvider.Current.Night);
+            _localizator.ChangeLanguage += () => SetDay(_lastI);
+        }
 
         [Button]private void SetDay(int i)
         {
             i = i % 7;
+            _lastI = i;
             _label.text = $"{_requestString.Get("KEY_NIGHTLABEL")}: {_requestString.Get("KEY_" + GetKeyByIndex(i))}";
         }
 
