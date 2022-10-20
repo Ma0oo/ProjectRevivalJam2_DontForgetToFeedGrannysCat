@@ -43,4 +43,17 @@
     "KEY_FRIDAY":"Friday",
     "KEY_SATURDAY":"Saturday",
     "KEY_SUNDAY":"Sunday",
+    
+    
+    "NOTE_NIGHT1_1":"Hello my dear grandson! I am very glad that you agreed to follow my cat today. I ask you not to forget that the cat is unusual and it was found under very strange circumstances. Therefore, the cat is contained in the pocket dimension.
+
+To business. To begin with, just make sure that the bowl is always full, otherwise the cat will die immediately - he cannot live even a second without food. And yes, the cat always hides the bowl and food, so you have to look for them first.
+
+Good luck! Grandmother.",
+
+    "NOTE_NIGHT2_1":"You did well last night. Well done! I found out I'd be back Friday morning, not before. Therefore, you will have to stay in this place a little longer. Forgive me, but you won't get out of there on your own. From the pocket dimension, you can get something only from the outside. Don't try it yourself, otherwise you may end up not on the earth, but in a much worse place where there are no conditions for life!!!!
+
+And yes. The cat told me that you fed him very well yesterday, so he promised that today he would eat much more than yesterday. You have to run faster =)",
+
+    "NOTE_NIGHT3_1":"URGENTLY! We found another cat at work. Since at work all pocket measurements are full, the cat had to be sent to you. Please feed him too!",
 }
