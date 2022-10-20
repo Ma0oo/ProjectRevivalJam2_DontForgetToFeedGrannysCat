@@ -18,16 +18,31 @@ namespace DoorSystem
         [SerializeField] private Door _connectDoor;
         [SerializeField] private Transform _pointExit;
 
+        public bool IsBlock => _isBlock;
+        [SerializeField] private bool _isBlock;
+
+        public UltEvent Blocked;
+        public UltEvent Unblocked;
+        
         public UltEvent Open;
         public UltEvent Close;
 
         public event Action StartMove;
         public event Action EndMove;
 
+        public void SetBlock(bool isActive)
+        {
+            if (isActive == IsBlock) return;
+            _isBlock = isActive;
+            if (_isBlock) Blocked.Invoke();
+            else Unblocked.Invoke();
+        }
+
 
         public bool MakeMove(DoorMoveEntity entity)
         {
-            if (_connectDoor == null) return false;
+            if (_connectDoor == null || IsBlock) return false;
+            if (_connectDoor.IsBlock) return false;
             Open?.Invoke();
             StartMove?.Invoke();
             entity.SetStateMove(true);

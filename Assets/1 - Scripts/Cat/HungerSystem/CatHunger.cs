@@ -1,17 +1,24 @@
 ﻿using System.Linq;
 using DefaultNamespace.Cat.InitData;
+using DefaultNamespace.ScenesLogic.Game;
 using DefaultNamespace.ScenesLogic.Game.GameLose;
+using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.MonoBehsGameHelper.ValueContainers;
+using Plugins.MaoUtility.SceneFlow;
 using UnityEngine;
 
 namespace DefaultNamespace.Cat.HungerSystem
 {
+    [DiMark]
     public class CatHunger : MonoBehaviour, IHungerControl, ICatPart, IInitGameDataCat
     {
         public IValueContainer<float> Stat => _valueContainer;
         [SerializeField] private FloatValueContainer _valueContainer;
         [SerializeField] private DataHunger _dataHunger;
         [SerializeField] private LoseGameComponent _loseGameComponent;
+        private GameTime _time;
+
+        private void Init(OwnerSceneLogic ownerSceneLogic) => _time = ownerSceneLogic.Get<GameTime>();
 
         private void Start()
         {
@@ -22,7 +29,7 @@ namespace DefaultNamespace.Cat.HungerSystem
 
         private void Update()
         {
-            _valueContainer.Current -= Time.deltaTime * _dataHunger.SpeedDownInSecond;
+            _valueContainer.Current -= Time.deltaTime * _dataHunger.SpeedDownInSecond * (_time.enabled ? 1 : 0);
             if (_valueContainer.Current <= _valueContainer.Min)
             {
                 _loseGameComponent.Lose();

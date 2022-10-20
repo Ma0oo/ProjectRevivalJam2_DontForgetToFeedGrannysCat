@@ -43,4 +43,6 @@
     "KEY_FRIDAY":"Пятница",
     "KEY_SATURDAY":"Субота",
     "KEY_SUNDAY":"Воскресенье",
+    
+    "NOTE_NIGHT1_1":"",
 }
