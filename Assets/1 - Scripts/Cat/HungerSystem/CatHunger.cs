@@ -29,7 +29,7 @@ namespace DefaultNamespace.Cat.HungerSystem
 
         private void Update()
         {
-            _valueContainer.Current -= Time.deltaTime * _dataHunger.SpeedDownInSecond * (_time.enabled ? 1 : 0);
+            _valueContainer.Current -= Time.deltaTime * _dataHunger.SpeedDownInSecond;
             if (_valueContainer.Current <= _valueContainer.Min)
             {
                 _loseGameComponent.Lose();

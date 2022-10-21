@@ -1,0 +1,24 @@
+KEY_NIGHTLABEL | scene Menu | ("KEY_NIGHTLABEL":"NewValue")
+Запрос от Name GM LabelNight, Name Parent Main
+
+KEY_MONDAY | scene Menu | ("KEY_MONDAY":"NewValue")
+Запрос от Name GM LabelNight, Name Parent Main
+
+BTN_CREDIT | scene Menu | ("BTN_CREDIT":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (2)
+
+BTN_PLAY | scene Menu | ("BTN_PLAY":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu
+
+BTN_EXIT | scene Menu | ("BTN_EXIT":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (3)
+
+PROTOTYPE_LABEL | scene Menu | ("PROTOTYPE_LABEL":"NewValue")
+Запрос от Name GM LabelPrototype, Name Parent Main
+
+BTN_SETTING | scene Menu | ("BTN_SETTING":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (1)
+
+NOTE_NIGHT1_1 | scene Game | ("NOTE_NIGHT1_1":"NewValue")
+Запрос от Name GM NotePanel, Name Parent MainCanvas
+

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0051636156, g: 0.007220662, b: 0.015572477, a: 1}
+  m_IndirectSpecularColor: {r: 0.0054355487, g: 0.008203276, b: 0.023664508, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6854,7 +6854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cacheMonoBeh:
-  - {fileID: 1594871695}
   - {fileID: 43254936}
   - {fileID: 151723324}
   - {fileID: 302773649}
@@ -6876,6 +6875,7 @@ MonoBehaviour:
   - {fileID: 1502703799}
   - {fileID: 1502703800}
   - {fileID: 1540684435}
+  - {fileID: 1594871695}
   - {fileID: 1628176141}
   - {fileID: 1628176145}
   - {fileID: 2142153663}
@@ -9143,6 +9143,14 @@ MonoBehaviour:
   Crouch: {fileID: 0}
   Run: {fileID: 0}
   Use: {fileID: 0}
+  FirstItem: {fileID: 0}
+  SecondItem: {fileID: 0}
+  ThirdItem: {fileID: 0}
+  FourtedItem: {fileID: 0}
+  FiftenItem: {fileID: 0}
+  DropItem: {fileID: 0}
+  CloseNote: {fileID: 0}
+  MenuGame: {fileID: 0}
 --- !u!114 &1502703800
 MonoBehaviour:
   m_ObjectHideFlags: 0

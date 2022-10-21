@@ -5,6 +5,7 @@ using Plugins.MaoUtility.IoUi.Btns;
 using Plugins.MaoUtility.IoUi.Core;
 using Plugins.MaoUtility.Localization.Core;
 using Plugins.MaoUtility.MaoExts.Static;
+using Plugins.MaoUtility.MonoBehsGameHelper;
 using Sirenix.Utilities;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -40,7 +41,12 @@ namespace DataGame.Keys
 
         private List<Action> _actOnDestroy = new List<Action>();
 
-        private MonoBehaviour[] Btns => new MonoBehaviour[]{Forward, Back, Right, Left, Jump, Crouch, Run, Use};
+        private MonoBehaviour[] Btns => new MonoBehaviour[]
+        {
+            Forward, Back, Right, Left, Jump, Crouch, Run, Use,
+            FiftenItem, SecondItem, ThirdItem, FourtedItem, FiftenItem, DropItem,
+            CloseNote, MenuGame
+        };
 
         private void Start()
         {

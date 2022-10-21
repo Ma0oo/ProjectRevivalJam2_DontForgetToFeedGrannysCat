@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
+    SerializedFormat: 0
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -131,27 +131,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
+    SerializedFormat: 0
+    SerializedBytes: 0101050000004d006f006e006f0073002f000000000165000000530079007300740065006d002e0043006f006c006c0065006300740069006f006e0073002e00470065006e0065007200690063002e004c00690073007400600031005b005b00440065006600610075006c0074004e0061006d006500730070006100630065002e00500072006f007000530079007300740065006d002e004900500072006f00700050006100720074002c00200041007300730065006d0062006c0079002d004300530068006100720070005d005d002c0020006d00730063006f0072006c0069006200000000000601000000000000000c000000000705
+    ReferencedUnityObjects:
+    - {fileID: 1808422094724151768}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: Monos
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[DefaultNamespace.PropSystem.IPropPart,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
 --- !u!114 &8636610921401114826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +309,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9f20bb62140d70644957224f635ab066, type: 2}
+  - {fileID: 2100000, guid: 4932cd8d52f14d14184fb369330d7ffa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

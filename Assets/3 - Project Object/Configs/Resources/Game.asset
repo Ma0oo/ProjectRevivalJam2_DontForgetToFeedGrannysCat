@@ -22,10 +22,20 @@ MonoBehaviour:
       Crouch: 306
       Run: 304
       Use: 101
+      FirstItem: 49
+      SecondItem: 50
+      ThirdItem: 51
+      FourtedItem: 52
+      FiftenItem: 53
+      DropItem: 103
+      CloseNote: 27
+      MenuGame: 27
     SoundConfig:
       Master: 1
       Effect: 1
       Music: 1
+    OtherDataSetting:
+      _langId: 
   DefaultProgress:
     _night: 0
   GameScene: Game

@@ -69,9 +69,9 @@ namespace DefaultNamespace.ScenesLogic.Game
 
             _gameResult.Win += OnWin;
             _gameResult.Lose += OnLose;
-            
-            NightControl.OnInited();
+
             _smGame.ChangeTo(StateGame.Gameloop);
+            NightControl.OnInited();
         }
 
         private void SpawnCat(Night.CatData catData, List<CatPoint> pointCat)
@@ -107,6 +107,9 @@ namespace DefaultNamespace.ScenesLogic.Game
             _gameResult.Win -= OnWin;
             _gameResult.Lose -= OnLose;
             _smGame.ChangeTo(StateGame.Lose);
+            
+            _player.Parts.Get<PlayerController>().enabled = false;
+            _fadeScreenScene.On(()=>CoroutineGame.Instance.Wait(1, EnterToMenu));
         }
 
         private void EnterToMenu()

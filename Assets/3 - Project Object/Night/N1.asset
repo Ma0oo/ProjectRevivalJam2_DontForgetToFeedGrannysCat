@@ -15,32 +15,6 @@ MonoBehaviour:
   Apartment: {fileID: 1917005875765388752, guid: 6f3f7c9ccde84b447885a050ea16c6fa, type: 3}
   Controller: {fileID: 11400000, guid: 154ca6ad825756640941f5683ea03d39, type: 2}
   _hours:
-  - Hour: 22
-    DurationInSecond: 30
-    SpeedByNormal:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
   - Hour: 23
     DurationInSecond: 30
     SpeedByNormal:
@@ -68,7 +42,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 0
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:
@@ -94,7 +68,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 1
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:
@@ -120,7 +94,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 2
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:
@@ -146,7 +120,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 3
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:
@@ -172,7 +146,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 4
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:
@@ -198,7 +172,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 5
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:
@@ -224,7 +198,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   - Hour: 6
-    DurationInSecond: 30
+    DurationInSecond: 60
     SpeedByNormal:
       serializedVersion: 2
       m_Curve:

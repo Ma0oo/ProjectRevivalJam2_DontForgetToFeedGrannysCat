@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using NoSystem;
+using Sirenix.Utilities;
 using UnityEngine;
 
 namespace DefaultNamespace.ApartmentSystem
@@ -27,8 +28,8 @@ namespace DefaultNamespace.ApartmentSystem
             List<T> reult = new List<T>();
             foreach (var room in Rooms)
             {
-                var r = room.RoomParts.Get<T>();
-                if (r != null) reult.Add(r);
+                var r = room.RoomParts.GetAll<T>();
+                if (r != null) r.ForEach(reult.Add);
             }
             return reult;
         }

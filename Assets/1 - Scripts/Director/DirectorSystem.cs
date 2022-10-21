@@ -65,14 +65,20 @@ namespace DefaultNamespace.Director
         
         public PropPoint[] GetPropPointsByMark(PropPointMark[] marks)
         {
+            string names = "";
+            marks.ForEach(x => names += x + ", ");
+            names += ".";
             var points = _apartmentFactory.App.GetAllRoomPart<PropPoint>();
-            return points.Where(x =>
+            var r = points.Where(x =>
             {
                 foreach (var mark in marks)
                     if (x.Marks.Contains(mark))
                         return true;
                 return false;
             }).ToArray();
+            
+            Debug.Log($"GetPropPointByMark {names} Count:{r.Length}, Start count: {points.Count}");
+            return r;
         }
         
         public PropPoint[] GetPropPointsByMark(PropPointMark[] marks, Room rooms)

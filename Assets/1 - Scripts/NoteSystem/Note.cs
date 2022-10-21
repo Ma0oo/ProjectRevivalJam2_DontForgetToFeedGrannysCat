@@ -1,11 +1,12 @@
-﻿using Plugins.MaoUtility.DILocator.Atr;
+﻿using DefaultNamespace.PropSystem;
+using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InterectSystem.Implementation.OneceInterect;
 using UnityEngine;
 
 namespace DefaultNamespace.NoteSystem
 {
     [DiMark]
-    public class Note : MonoBehaviour
+    public class Note : MonoBehaviour, IPropPart
     {
         [SerializeField] private OnceInterectObject _interectObject;
         [SerializeField] private string _keyNote;

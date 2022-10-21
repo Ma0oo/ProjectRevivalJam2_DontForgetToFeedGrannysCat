@@ -12,6 +12,6 @@ namespace DefaultNamespace.SubtitlesSystem
         
         protected override void Register(DI di) => di.Set(_subtitles, IDSceneSubtitles);
 
-        protected override void Unregister(DI di) => di.Remove<Subtitles>();
+        protected override void Unregister(DI di) => di.Remove<Subtitles>(IDSceneSubtitles);
     }
 }

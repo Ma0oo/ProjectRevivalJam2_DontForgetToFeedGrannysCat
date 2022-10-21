@@ -1,4 +1,5 @@
 ﻿using System;
+using DefaultNamespace.NoteSystem;
 using Plugins.MaoUtility.DataManagers;
 using UnityEngine;
 

@@ -46,7 +46,7 @@ namespace DefaultNamespace.Cat
             var points = _apartmentFactory.App.GetAllRoomPart<PropPoint>();
             var propPointFilter = _bowl.Parts.Get<PropAllowedMarkPoint>();
             var point = points.Where(x => propPointFilter.ContainsMark(x.Marks));
-            var result = _propFactory.Create(_bowl, points.GetRandom());
+            var result = _propFactory.Create(_bowl, point.GetRandom());
             result.Parts.Get<ViewHungerBowl>().Init(catUnit.Parts.Get<CatHunger>());
         }
 

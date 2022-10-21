@@ -50,6 +50,13 @@ namespace DefaultNamespace.Player
             SetWalk(false);
         }
 
+        private void OnDisable()
+        {
+            _mover.Walked -= () => SetWalk(true);
+            _mover.NotWalked -= () => SetWalk(false);
+            SetWalk(false);
+        }
+
         private void SetWalk(bool state)
         {
             if (_stateWalk == state) return;

@@ -14,12 +14,12 @@ namespace DefaultNamespace.ScenesLogic.Game.GameLose
 
         private void OnEnable()
         {
-            _ownerSceneLogic.Get<GameResult>()?.Register(this);
+            _ownerSceneLogic.Get<GameResult>().Register(this);
         }
 
         private void OnDisable()
         {
-            _ownerSceneLogic.Get<GameResult>()?.UnRegister(this);
+            _ownerSceneLogic.Get<GameResult>().UnRegister(this);
         }
 
         [Button]public void Lose()
