@@ -26,6 +26,15 @@ namespace DataGame.Keys
         [HideInInspector] public IoBtnKey Crouch;
         [HideInInspector] public IoBtnKey Run;
         [HideInInspector] public IoBtnKey Use;
+        
+        [HideInInspector] public IoBtnKey FirstItem;
+        [HideInInspector] public IoBtnKey SecondItem;
+        [HideInInspector] public IoBtnKey ThirdItem;
+        [HideInInspector] public IoBtnKey FourtedItem;
+        [HideInInspector] public IoBtnKey FiftenItem;
+        [HideInInspector] public IoBtnKey DropItem;
+        [HideInInspector] public IoBtnKey CloseNote;
+        [HideInInspector] public IoBtnKey MenuGame;
 
         [DiInject] private Localizator _localizator;
 
@@ -50,6 +59,15 @@ namespace DataGame.Keys
             Crouch = Spawn(nameof(Crouch));
             Run = Spawn(nameof(Run));
             Use = Spawn(nameof(Use));
+
+            FirstItem = Spawn(nameof(FirstItem));
+            SecondItem = Spawn(nameof(SecondItem));
+            ThirdItem = Spawn(nameof(ThirdItem));
+            FourtedItem = Spawn(nameof(FourtedItem));
+            FiftenItem = Spawn(nameof(FiftenItem));
+            DropItem = Spawn(nameof(DropItem));
+            CloseNote = Spawn(nameof(CloseNote));
+            MenuGame = Spawn(nameof(MenuGame));
         }
 
         private IoBtnKey Spawn(string nameField)

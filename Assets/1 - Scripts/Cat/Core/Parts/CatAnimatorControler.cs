@@ -1,4 +1,5 @@
 ﻿using NoSystem;
+using Plugins.MaoUtility.InputModule.Core.BaseClasses;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -21,6 +22,8 @@ namespace DefaultNamespace.Cat
             OffAll(value);
             _animator.SetBool(_nameSleepProperty, value);
         }
+
+        [Button]public void Idel() => OffAll(true);
 
         private void OffAll(bool toActive)
         {

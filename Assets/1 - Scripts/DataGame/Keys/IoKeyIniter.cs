@@ -12,6 +12,8 @@ namespace DataGame.Keys
         {
             base.Register(panel);
             var key = _dataProvider.DataSettingCurrent.Keys;
+            
+            //main
             panel.Back.Init(()=>key.Back, x=>
             {
                 key.Back = x;
@@ -50,6 +52,51 @@ namespace DataGame.Keys
             panel.Jump.Init(()=>key.Jump, x=>
             {
                 key.Jump = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            
+            
+            //items
+            panel.FirstItem.Init(()=>key.FirstItem, x=>
+            {
+                key.FirstItem = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            panel.SecondItem.Init(()=>key.SecondItem, x=>
+            {
+                key.SecondItem = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            panel.ThirdItem.Init(()=>key.ThirdItem, x=>
+            {
+                key.ThirdItem = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            panel.FourtedItem.Init(()=>key.FourtedItem, x=>
+            {
+                key.FourtedItem = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            panel.FiftenItem.Init(()=>key.FiftenItem, x=>
+            {
+                key.FiftenItem = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            
+            //other
+            panel.DropItem.Init(()=>key.DropItem, x=>
+            {
+                key.DropItem = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            panel.CloseNote.Init(()=>key.CloseNote, x=>
+            {
+                key.CloseNote = x;
+                _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
+            });
+            panel.MenuGame.Init(()=>key.MenuGame, x=>
+            {
+                key.MenuGame = x;
                 _dataProvider.DataSettingCurrent.Bus.Post(new DataSetting.DataUpdated());
             });
         }

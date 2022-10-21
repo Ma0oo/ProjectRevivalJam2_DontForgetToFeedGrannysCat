@@ -1,0 +1,87 @@
+PROTOTYPE_LABEL | scene Menu | ("PROTOTYPE_LABEL":"NewValue")
+Запрос от Name GM LabelPrototype, Name Parent Main
+
+KEY_NIGHTLABEL | scene Menu | ("KEY_NIGHTLABEL":"NewValue")
+Запрос от Name GM LabelNight, Name Parent Main
+
+KEY_MONDAY | scene Menu | ("KEY_MONDAY":"NewValue")
+Запрос от Name GM LabelNight, Name Parent Main
+
+BTN_CREDIT | scene Menu | ("BTN_CREDIT":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (2)
+
+BTN_PLAY | scene Menu | ("BTN_PLAY":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu
+
+BTN_EXIT | scene Menu | ("BTN_EXIT":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (3)
+
+BTN_SETTING | scene Menu | ("BTN_SETTING":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (1)
+
+PROTOTYPE_LABEL | scene Menu | ("PROTOTYPE_LABEL":"NewValue")
+Запрос от Name GM LabelPrototype, Name Parent Main
+
+KEY_NIGHTLABEL | scene Menu | ("KEY_NIGHTLABEL":"NewValue")
+Запрос от Name GM LabelNight, Name Parent Main
+
+KEY_MONDAY | scene Menu | ("KEY_MONDAY":"NewValue")
+Запрос от Name GM LabelNight, Name Parent Main
+
+BTN_CREDIT | scene Menu | ("BTN_CREDIT":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (2)
+
+BTN_PLAY | scene Menu | ("BTN_PLAY":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu
+
+BTN_EXIT | scene Menu | ("BTN_EXIT":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (3)
+
+BTN_SETTING | scene Menu | ("BTN_SETTING":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (1)
+
+KEY_Master | scene Menu | ("KEY_Master":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Effect | scene Menu | ("KEY_Effect":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Music | scene Menu | ("KEY_Music":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Forward | scene Menu | ("KEY_Forward":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Back | scene Menu | ("KEY_Back":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Right | scene Menu | ("KEY_Right":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Left | scene Menu | ("KEY_Left":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Jump | scene Menu | ("KEY_Jump":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Crouch | scene Menu | ("KEY_Crouch":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Run | scene Menu | ("KEY_Run":"NewValue")
+Установка имя поля для настроек в главном меню
+
+KEY_Use | scene Menu | ("KEY_Use":"NewValue")
+Установка имя поля для настроек в главном меню
+
+BTN_CLEAR_SAVE | scene Menu | ("BTN_CLEAR_SAVE":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu-Clear Progress
+
+BTN_BACK_MENU | scene Menu | ("BTN_BACK_MENU":"NewValue")
+Запрос от Name GM SetLocal, Name Parent BackBtn
+
+BTN_KEY_SETTING | scene Menu | ("BTN_KEY_SETTING":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu (1)
+
+BTN_SOUND_SETTING | scene Menu | ("BTN_SOUND_SETTING":"NewValue")
+Запрос от Name GM Local, Name Parent BtnMenu
+

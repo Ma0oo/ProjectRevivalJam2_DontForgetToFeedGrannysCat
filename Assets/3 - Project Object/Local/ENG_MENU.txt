@@ -29,6 +29,8 @@
     "CREDIT_SOUND":"Sound and music",
     "CREDIT_ryanavx_MUSIC":"Menu theme",
     "CREDIT_ryanavx_MUSIC_LINK":"Ryanavx music",
+    "CREDIT_200Free":"Sound effect (200 free)",
+    "CREDIT_200Free_LINK":"itch.io",
     
     "CREDIT_ASSETS":"Other",
     "CREDIT_PSX_SHADER":"PSX SHADER",
@@ -43,6 +45,8 @@
     "KEY_FRIDAY":"Friday",
     "KEY_SATURDAY":"Saturday",
     "KEY_SUNDAY":"Sunday",
+    
+    "PROTOTYPE_LABEL":"Prototype: only 1-st night",
     
     
     "NOTE_NIGHT1_1":"Hello my dear grandson! I am very glad that you agreed to follow my cat today. I ask you not to forget that the cat is unusual and it was found under very strange circumstances. Therefore, the cat is contained in the pocket dimension.
