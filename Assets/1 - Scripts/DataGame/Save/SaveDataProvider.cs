@@ -1,6 +1,8 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using DefaultNamespace;
 using Plugins.MaoUtility.SaveSystem.IO;
+using ScenesLogic.Menu;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -19,6 +21,18 @@ namespace DataGame.Save
         [ShowInInspector]private SaveData _current;
         
         private SaverJSONtoPlayerPrefs _saver = new SaverJSONtoPlayerPrefs();
+
+        private void Start()
+        {
+            SettingPanelMenu.ClearAllProgress += OnClear;
+        }
+
+        private void OnClear()
+        {
+            _current = new SaveData();
+            Save();
+            Load();
+        }
 
         private string PathData => Path.Join(Application.dataPath, "Save/Progress.json");
 
@@ -48,8 +62,10 @@ namespace DataGame.Save
             _saver.Save(_current, PathData);
         }
 
-        private void OnDestroy() => Save();
-
-        
+        private void OnDestroy()
+        {
+            Save();
+            SettingPanelMenu.ClearAllProgress -= OnClear;
+        }
     }
 }

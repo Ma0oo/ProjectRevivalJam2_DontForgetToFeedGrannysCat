@@ -1,6 +1,4 @@
-﻿using UnityEditor.AssetImporters;
-
-namespace Plugins.MaoUtility.LuaScript
+﻿namespace Plugins.MaoUtility.LuaScript
 {
     [System.Serializable]
     public class TestEngine : JsEngine

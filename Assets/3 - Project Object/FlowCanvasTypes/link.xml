@@ -77,13 +77,23 @@
 		<type fullname="DefaultNamespace.ControllerAudioMixer" preserve="all"/>
 		<type fullname="DefaultNamespace.ConfigGame+GroupMixer" preserve="all"/>
 		<type fullname="DefaultNamespace.Subtitles" preserve="all"/>
+		<type fullname="DefaultNamespace.ApartmentSystem.Room" preserve="all"/>
+		<type fullname="DefaultNamespace.ApartmentSystem.RoomMark" preserve="all"/>
+		<type fullname="DefaultNamespace.ApartmentSystem.RoomMarkContainer" preserve="all"/>
+		<type fullname="DefaultNamespace.ApartmentSystem.RoomPartManager" preserve="all"/>
+		<type fullname="DefaultNamespace.Cat.CatAnimatorControler" preserve="all"/>
 		<type fullname="DefaultNamespace.Cat.CatFactory" preserve="all"/>
 		<type fullname="DefaultNamespace.Cat.CatPartManager" preserve="all"/>
+		<type fullname="DefaultNamespace.Cat.CatPoint" preserve="all"/>
+		<type fullname="DefaultNamespace.Cat.CatPointMark" preserve="all"/>
+		<type fullname="DefaultNamespace.Cat.CatUnit" preserve="all"/>
 		<type fullname="DefaultNamespace.Director.DirectorSystem" preserve="all"/>
+		<type fullname="DefaultNamespace.NoteSystem.Note" preserve="all"/>
 		<type fullname="DefaultNamespace.PropSystem.Prop" preserve="all"/>
 		<type fullname="DefaultNamespace.PropSystem.PropAllowedMarkPoint" preserve="all"/>
 		<type fullname="DefaultNamespace.PropSystem.PropFactory" preserve="all"/>
 		<type fullname="DefaultNamespace.PropSystem.PropParts" preserve="all"/>
+		<type fullname="DefaultNamespace.PropSystem.PropPointMark" preserve="all"/>
 		<type fullname="DefaultNamespace.ScenesLogic.Game.ActionByGameTime" preserve="all"/>
 		<type fullname="DefaultNamespace.ScenesLogic.Game.GameTimeEvents" preserve="all"/>
 		<type fullname="DefaultNamespace.VoiceSystem.CatVoice" preserve="all"/>

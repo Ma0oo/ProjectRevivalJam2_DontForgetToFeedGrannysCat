@@ -11,12 +11,11 @@ namespace DataGame.Save
     public class SaveData
     {
         [JsonIgnore] public int Night => _night;
-        [SerializeField,UnityEngine.Min(0), JsonProperty] private int _night;
+        [SerializeField,UnityEngine.Min(0), JsonProperty] private int _night=0;
 
         public void UpdateNight(Night lastPassNight, Night[] allNight)
         {
-            _night = allNight.ToList().IndexOf(lastPassNight) + 1;
-            _night = Mathf.Clamp(_night, 0, allNight.Length);
+            _night = allNight.ToList().IndexOf(lastPassNight)+1;
         }
     }
 }

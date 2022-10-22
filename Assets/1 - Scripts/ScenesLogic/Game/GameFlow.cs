@@ -17,7 +17,6 @@ using ScenesLogic.Menu;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using Unity.VisualScripting;
-using UnityEditor.SearchService;
 using UnityEngine;
 
 namespace DefaultNamespace.ScenesLogic.Game

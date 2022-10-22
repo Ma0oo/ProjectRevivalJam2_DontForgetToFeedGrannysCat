@@ -1,7 +1,6 @@
 ﻿using System.Xml;
 using Player.Controlls;
 using Plugins.MaoUtility.SM;
-using Sirenix.OdinInspector.Modules.UnityMathematics.Editor;
 
 namespace DefaultNamespace.NoteSystem
 {

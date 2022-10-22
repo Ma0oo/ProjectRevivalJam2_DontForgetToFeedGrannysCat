@@ -4,6 +4,7 @@ using DefaultNamespace.ScenesLogic.Game;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.Localization.Core;
 using Plugins.MaoUtility.Localization.Utility;
+using Plugins.MaoUtility.MaoExts.Static;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -22,13 +23,12 @@ namespace DataGame.Keys
 
         private void Start()
         {
-            SetDay(_saveDataProvider.Current.Night);
             _localizator.ChangeLanguage += () => SetDay(_lastI);
+            CoroutineGame.Instance.Wait(5, () => SetDay(_saveDataProvider.Current.Night));
         }
 
         [Button]private void SetDay(int i)
         {
-            i = i % 7;
             _lastI = i;
             _label.text = $"{_requestString.Get("KEY_NIGHTLABEL")}: {_requestString.Get("KEY_" + GetKeyByIndex(i))}";
         }

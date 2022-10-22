@@ -26,6 +26,8 @@ namespace ScenesLogic.Menu
         [DiInject] private DataProvider _settingsProvider;
 
         [DiInject(RegisterFadeScreenBetweenScene.FadeScreenBlack)] private FadeScreen _fadeScreen;
+
+        public static event Action ClearAllProgress;
         
         private IHideOpenIoBtn[] _handlers => new IHideOpenIoBtn[]{_ioSoundHandlers, _keyHandler};
 
@@ -57,6 +59,7 @@ namespace ScenesLogic.Menu
                 _fadeScreen.On(() =>
                 {
                     PlayerPrefs.DeleteAll();
+                    ClearAllProgress?.Invoke();
                     SceneLoader.Restart(()=>_fadeScreen.Off());    
                 });
             };
