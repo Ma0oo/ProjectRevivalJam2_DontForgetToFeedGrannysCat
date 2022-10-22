@@ -23,6 +23,16 @@
     "KEY_Run":"Run Fast",   
     "KEY_Use":"Use",
     
+    "KEY_FirstItem":"Item 1",
+    "KEY_SecondItem":"Item 2",
+    "KEY_ThirdItem":"Item 3",
+    "KEY_FourtedItem":"Item 4",
+    "KEY_FiftenItem":"Item 5",
+    
+    "KEY_DropItem":"Drop",
+    "KEY_CloseNote":"Close note",
+    "KEY_MenuGame":"Menu",
+    
     "CREDIT_JAM_NAME_DESCRIPTION":"Game for jam",
     "CREDIT_JAM_NAME":"Project Revival Jam 2",
     

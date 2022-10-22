@@ -16,8 +16,7 @@ namespace DefaultNamespace.ItemSystem
         public Item Clone()
         {
             var r = new Item();
-            //DONT COPY, JUST LINK
-            r._itemConfigManager = _itemConfigManager; 
+            r._itemConfigManager = _itemConfigManager.Clone() as ItemConfigManager; 
             return r;
         }
     }

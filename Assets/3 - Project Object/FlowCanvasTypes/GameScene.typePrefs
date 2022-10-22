@@ -64,5 +64,10 @@
     "UnityEngine.SceneManagement.SceneManager",
     "UnityEngine.UI.Button",
     "UnityEngine.UI.Slider",
-    "DefaultNamespace.VoiceSystem.CatVoice"
+    "DefaultNamespace.VoiceSystem.CatVoice",
+    "DefaultNamespace.PropSystem.Prop",
+    "DefaultNamespace.PropSystem.PropAllowedMarkPoint",
+    "DefaultNamespace.PropSystem.PropFactory",
+    "DefaultNamespace.PropSystem.PropParts",
+    "DefaultNamespace.Director.DirectorSystem"
 ]

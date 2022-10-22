@@ -44,7 +44,7 @@ namespace DataGame.Keys
         private MonoBehaviour[] Btns => new MonoBehaviour[]
         {
             Forward, Back, Right, Left, Jump, Crouch, Run, Use,
-            FiftenItem, SecondItem, ThirdItem, FourtedItem, FiftenItem, DropItem,
+            FirstItem, SecondItem, ThirdItem, FourtedItem, FiftenItem, DropItem,
             CloseNote, MenuGame
         };
 

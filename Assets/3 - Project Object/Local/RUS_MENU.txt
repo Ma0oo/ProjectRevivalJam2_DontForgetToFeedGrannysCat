@@ -23,6 +23,16 @@
     "KEY_Run":"Бег",   
     "KEY_Use":"Использовать",
     
+    "KEY_FirstItem":"Предмет 1",
+    "KEY_SecondItem":"Предмет 2",
+    "KEY_ThirdItem":"Предмет 3",
+    "KEY_FourtedItem":"Предмет 4",
+    "KEY_FiftenItem":"Предмет 5",
+    
+    "KEY_DropItem":"Выбросить",
+    "KEY_CloseNote":"Закрыть записку",
+    "KEY_MenuGame":"Меню",
+    
     "CREDIT_JAM_NAME_DESCRIPTION":"Игра для джема",
     "CREDIT_JAM_NAME":"Project Revival Jam 2",
     

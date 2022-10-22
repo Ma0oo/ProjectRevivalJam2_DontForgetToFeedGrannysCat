@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _valueContainer: {fileID: 4418606140224718249}
   _dataHunger:
-    CountFeed: 180
+    CountFeed: 75
     SpeedDownInSecond: 1
   _loseGameComponent: {fileID: 1910726623059299564}
 --- !u!114 &4418606140224718249

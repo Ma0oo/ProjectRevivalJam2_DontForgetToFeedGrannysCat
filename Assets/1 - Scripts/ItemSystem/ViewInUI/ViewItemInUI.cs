@@ -33,7 +33,9 @@ namespace DefaultNamespace.ItemSystem.ViewInUI
             
             public override object Clone()
             {
-                return new ViewItemInUI_CFG();
+                var r = new ViewItemInUI_CFG();
+                r.Icon = Icon;
+                return r;
             }
         }
     }

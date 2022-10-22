@@ -28,6 +28,7 @@ MonoBehaviour:
       - rid: 3340486077329440769
       - rid: 3340486077329440772
       - rid: 3340486150169559040
+      - rid: 3340486167596105728
   references:
     version: 2
     RefIds:
@@ -46,4 +47,6 @@ MonoBehaviour:
     - rid: 3340486150169559040
       type: {class: ViewHungerBowl/FoodDataItemConfig, ns: DefaultNamespace.Cat.HungerSystem.Ext.Prop, asm: Assembly-CSharp}
       data:
-        AddFood: 30
+        AddFood: 60
+    - rid: 3340486167596105728
+      type: {class: ItemEventBus, ns: DefaultNamespace.ItemSystem.EventBuss, asm: Assembly-CSharp}

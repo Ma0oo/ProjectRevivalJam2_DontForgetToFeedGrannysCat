@@ -79,6 +79,11 @@
 		<type fullname="DefaultNamespace.Subtitles" preserve="all"/>
 		<type fullname="DefaultNamespace.Cat.CatFactory" preserve="all"/>
 		<type fullname="DefaultNamespace.Cat.CatPartManager" preserve="all"/>
+		<type fullname="DefaultNamespace.Director.DirectorSystem" preserve="all"/>
+		<type fullname="DefaultNamespace.PropSystem.Prop" preserve="all"/>
+		<type fullname="DefaultNamespace.PropSystem.PropAllowedMarkPoint" preserve="all"/>
+		<type fullname="DefaultNamespace.PropSystem.PropFactory" preserve="all"/>
+		<type fullname="DefaultNamespace.PropSystem.PropParts" preserve="all"/>
 		<type fullname="DefaultNamespace.ScenesLogic.Game.ActionByGameTime" preserve="all"/>
 		<type fullname="DefaultNamespace.ScenesLogic.Game.GameTimeEvents" preserve="all"/>
 		<type fullname="DefaultNamespace.VoiceSystem.CatVoice" preserve="all"/>
