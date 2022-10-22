@@ -233,5 +233,5 @@ MonoBehaviour:
     - rid: 3340486077329440773
       type: {class: CatHunger/DataHunger, ns: DefaultNamespace.Cat.HungerSystem, asm: Assembly-CSharp}
       data:
-        CountFeed: 180
+        CountFeed: 45
         SpeedDownInSecond: 1

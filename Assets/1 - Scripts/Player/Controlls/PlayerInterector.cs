@@ -7,6 +7,7 @@ using Player.Input;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.InputModule.Core;
+using Plugins.MaoUtility.InterectSystem.Core;
 using Plugins.MaoUtility.InterectSystem.Core.BasesClasses;
 using Plugins.MaoUtility.InterectSystem.Implementation;
 using Plugins.MaoUtility.InterectSystem.Implementation.OneceInterect;
@@ -27,6 +28,8 @@ namespace Player.Controlls
 
         public event Action NoToInterect;
         public event Action Interected;
+
+        public event Action<InterectObject> FindedInterect;
         
         private SubInputClass<PlayerInterectInput> _sub;
 
@@ -56,6 +59,7 @@ namespace Player.Controlls
                         .Interect(new OnceInterectAction())
                         .Interect(new AddToInventory(_inventory));
                     Interected?.Invoke();
+                    FindedInterect?.Invoke(interct);
                 }
                 else
                     NoToInterect?.Invoke();

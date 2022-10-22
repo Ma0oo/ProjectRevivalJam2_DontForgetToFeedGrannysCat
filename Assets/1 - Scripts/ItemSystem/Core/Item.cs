@@ -11,6 +11,7 @@ namespace DefaultNamespace.ItemSystem
     {
         public ICloseDataManager<ItemConfig> Confgis => _itemConfigManager;
         [SerializeField] private ItemConfigManager _itemConfigManager;
+        public ItemConfigManager OpenConfig => _itemConfigManager;
 
         public Item Clone()
         {

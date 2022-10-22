@@ -27,6 +27,7 @@ MonoBehaviour:
       - rid: 3340486075250114561
       - rid: 3340486077329440769
       - rid: 3340486077329440772
+      - rid: 3340486150169559040
   references:
     version: 2
     RefIds:
@@ -42,3 +43,7 @@ MonoBehaviour:
       type: {class: ViewItemInWorld/ViewItemInWorld_CFG, ns: DefaultNamespace.ItemSystem.ViewInGameWorld, asm: Assembly-CSharp}
       data:
         _view: {fileID: 6627265107795889308, guid: 1d9f0f8a4e7990344bbfaf0c206a072a, type: 3}
+    - rid: 3340486150169559040
+      type: {class: ViewHungerBowl/FoodDataItemConfig, ns: DefaultNamespace.Cat.HungerSystem.Ext.Prop, asm: Assembly-CSharp}
+      data:
+        AddFood: 30

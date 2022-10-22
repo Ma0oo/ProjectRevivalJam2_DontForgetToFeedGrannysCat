@@ -2,10 +2,12 @@
 using System.Linq;
 using DefaultNamespace.ItemSystem;
 using DefaultNamespace.ItemSystem.Inventory;
+using DefaultNamespace.Player.Inventory.HandView.ExtInterect;
 using NoSystem;
 using Plugins.MaoUtility.DILocator.Atr;
 using Plugins.MaoUtility.InputModule.AutoSub;
 using Plugins.MaoUtility.InputModule.Core;
+using Plugins.MaoUtility.InterectSystem.Core;
 using Plugins.MaoUtility.MaoExts.Static;
 using Sirenix.OdinInspector;
 using Unity.VisualScripting;
@@ -28,6 +30,7 @@ namespace DefaultNamespace.Player.Inventory.HandView
         {
             _input = new SubInputInterface<IHandInput>(Reg, Unreg);
             _input.SubscribeAction(true);
+            _inventory.Removed += x => SelectLastIndex();
         }
 
         public void SelectLastIndex() => OnSelected(_lastIndex);
